@@ -1,4 +1,4 @@
-# shapenetpp-fe
+# ShapeNet++ FE
 
 > ShapeNet++ Annotator - FE
 
