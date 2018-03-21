@@ -37,13 +37,11 @@
 </template>
 
 <script>
-import TestAnnotatorPage1Main1 from './components/TestAnnotatorPage1Main1'
-
 export default {
-  name: 'App',
-  components: {
-    TestAnnotatorPage1Main1
-  }
+  name: 'App'
+  // components: {
+  //   TestAnnotatorPage1Main1
+  // }
 }
 </script>
 
