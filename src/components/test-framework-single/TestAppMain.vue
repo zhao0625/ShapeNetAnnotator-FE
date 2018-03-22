@@ -110,15 +110,16 @@
               </div>
               <br/>
               <!-- TODO 再结合多选框-->
-              <el-checkbox-group v-model="checkboxGroupTest">
+              <!--<el-checkbox-group>-->
+              <!--<el-checkbox-group v-model="checkboxGroupTest">-->
                 <div class="msg-add" v-for="item in buttonPopupTest" :key="item">
                   <el-popover placement="top" trigger="hover">
                     弹出内容：{{item.content}}
                     <!--<el-button slot="reference" icon="edit" class="edit-btn">按钮内容：{{item.content}}</el-button>-->
-                    <el-checkbox slot="reference">checkbox内容：{{item.content}}</el-checkbox>
+                    <el-checkbox slot="reference" v-model="item.vModel">checkbox内容：{{item.content}}</el-checkbox>
                   </el-popover>
                 </div>
-              </el-checkbox-group>
+              <!--</el-checkbox-group>-->
               <br/>
               <!--<el-button v-popover:popoverTest>hover 激活 test</el-button>-->
               <!--<el-checkbox label="备选项1" border></el-checkbox><br/>-->
@@ -369,22 +370,27 @@ export default {
       checkboxGroupTest: [],
       checkboxGroupVFor: [
         {
-          label: 'test 1'
+          label: 'test 1',
+          vModel: true
         },
         {
-          label: 'test 2'
+          label: 'test 2',
+          vModel: false
         },
         {
-          label: 'test 123'
+          label: 'test 123',
+          vModel: false
         }
       ],
       // TODO v-for & 多选框 + hover展示按钮
       buttonPopupTest: [
         {
-          content: 'pop up 1'
+          content: 'pop up 1',
+          vModel: false
         },
         {
-          content: 'pop up 2'
+          content: 'pop up 2',
+          vModel: true
         }
       ]
     }
