@@ -1,0 +1,3372 @@
+[
+  {
+    "wn30synsetkey": "seat.n.03",
+    "text": "sitting_furniture",
+    "nodes": [
+      {
+        "wn30synsetkey": "seat.n.04",
+        "text": "seat",
+        "nodes": [
+          {
+            "wn30synsetkey": "undefined",
+            "text": "apron",
+            "gloss": "The strips that run between the legs and connects to the surface (seat)"
+          },
+          {
+            "wn30synsetkey": "cushion.n.03",
+            "text": "cushion",
+            "gloss": "a soft bag filled with air or a mass of padding such as feathers or foam rubber etc."
+          },
+          {
+            "wn30synsetkey": "pillow.n.01",
+            "text": "pillow",
+            "gloss": "a cushion to support the head of a sleeping person"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "seat_surface",
+            "gloss": "undefined"
+          }
+        ],
+        "gloss": "any support where you can sit (especially the part of a chair or bench etc. on which you sit); \"he dusted off the seat before sitting down\""
+      },
+      {
+        "wn30synsetkey": "base.n.08",
+        "text": "chair_base",
+        "nodes": [
+          {
+            "wn30synsetkey": "undefined",
+            "text": "swivel_base",
+            "nodes": [
+              {
+                "text": "footrest_ring"
+              },
+              {
+                "wn30synsetkey": "undefined",
+                "text": "gas_lift_cylinder",
+                "gloss": "mechanical devices which use the power of compressed gas to produce a force in a reciprocating linear motion."
+              },
+              {
+                "wn30synsetkey": "undefined",
+                "text": "tilt_control_and_gas_lift_mechanism",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "lever.n.01",
+                    "text": "lever",
+                    "gloss": "a rigid bar pivoted about a fulcrum"
+                  },
+                  {
+                    "wn30synsetkey": "plate.n.02",
+                    "text": "mounting_plate",
+                    "gloss": "a sheet of metal or wood or glass or plastic"
+                  },
+                  {
+                    "wn30synsetkey": "knob.n.02",
+                    "text": "knob",
+                    "gloss": "a round handle"
+                  }
+                ],
+                "gloss": "The gas lift mechanism allows the user to adjust the chair to the preferred, ergonomically correct position."
+              },
+              {
+                "wn30synsetkey": "swivel.n.01",
+                "text": "swivel",
+                "gloss": "a coupling (as in a chain) that has one end that turns on a headed pin"
+              },
+              {
+                "wn30synsetkey": "undefined",
+                "text": "star_swivel_base",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "leg.n.03",
+                    "text": "furniture_leg",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "foot.n.11",
+                        "text": "furniture_foot",
+                        "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+                      },
+                      {
+                        "wn30synsetkey": "caster.n.03",
+                        "text": "caster",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "undefined",
+                            "text": "caster_rig",
+                            "nodes": [
+                              {
+                                "wn30synsetkey": "plate.n.02",
+                                "text": "mounting_plate",
+                                "gloss": "a sheet of metal or wood or glass or plastic"
+                              }
+                            ],
+                            "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                          },
+                          {
+                            "wn30synsetkey": "wheel.n.01",
+                            "text": "wheel",
+                            "nodes": [
+                              {
+                                "wn30synsetkey": "spoke.n.01",
+                                "text": "spoke",
+                                "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                              },
+                              {
+                                "wn30synsetkey": "hub.n.01",
+                                "text": "hub",
+                                "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                              },
+                              {
+                                "wn30synsetkey": "hubcap.n.01",
+                                "text": "hubcap",
+                                "gloss": "cap that fits over the hub of a wheel"
+                              },
+                              {
+                                "wn30synsetkey": "rim.n.03",
+                                "text": "rim",
+                                "gloss": "the outer part of a wheel to which the tire is attached"
+                              }
+                            ],
+                            "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                          },
+                          {
+                            "wn30synsetkey": "brake.n.01",
+                            "text": "brake",
+                            "gloss": "a restraint used to slow or stop a vehicle"
+                          }
+                        ],
+                        "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+                      }
+                    ],
+                    "gloss": "one of the supports for a piece of furniture"
+                  }
+                ],
+                "gloss": "swivel base with a star shape"
+              }
+            ],
+            "gloss": "undefined"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "leg_base",
+            "nodes": [
+              {
+                "wn30synsetkey": "undefined",
+                "text": "stretcher",
+                "gloss": "horizontal support element joining the legs"
+              },
+              {
+                "wn30synsetkey": "leg.n.03",
+                "text": "furniture_leg",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "foot.n.11",
+                    "text": "furniture_foot",
+                    "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+                  },
+                  {
+                    "wn30synsetkey": "caster.n.03",
+                    "text": "caster",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "undefined",
+                        "text": "caster_rig",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "plate.n.02",
+                            "text": "mounting_plate",
+                            "gloss": "a sheet of metal or wood or glass or plastic"
+                          }
+                        ],
+                        "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                      },
+                      {
+                        "wn30synsetkey": "wheel.n.01",
+                        "text": "wheel",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "spoke.n.01",
+                            "text": "spoke",
+                            "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                          },
+                          {
+                            "wn30synsetkey": "hub.n.01",
+                            "text": "hub",
+                            "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                          },
+                          {
+                            "wn30synsetkey": "hubcap.n.01",
+                            "text": "hubcap",
+                            "gloss": "cap that fits over the hub of a wheel"
+                          },
+                          {
+                            "wn30synsetkey": "rim.n.03",
+                            "text": "rim",
+                            "gloss": "the outer part of a wheel to which the tire is attached"
+                          }
+                        ],
+                        "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                      },
+                      {
+                        "wn30synsetkey": "brake.n.01",
+                        "text": "brake",
+                        "gloss": "a restraint used to slow or stop a vehicle"
+                      }
+                    ],
+                    "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+                  }
+                ],
+                "gloss": "one of the supports for a piece of furniture"
+              }
+            ],
+            "gloss": "undefined"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "rocker_base",
+            "nodes": [
+              {
+                "wn30synsetkey": "undefined",
+                "text": "stretcher",
+                "gloss": "horizontal support element joining the legs"
+              },
+              {
+                "wn30synsetkey": "leg.n.03",
+                "text": "furniture_leg",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "foot.n.11",
+                    "text": "furniture_foot",
+                    "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+                  },
+                  {
+                    "wn30synsetkey": "caster.n.03",
+                    "text": "caster",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "undefined",
+                        "text": "caster_rig",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "plate.n.02",
+                            "text": "mounting_plate",
+                            "gloss": "a sheet of metal or wood or glass or plastic"
+                          }
+                        ],
+                        "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                      },
+                      {
+                        "wn30synsetkey": "wheel.n.01",
+                        "text": "wheel",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "spoke.n.01",
+                            "text": "spoke",
+                            "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                          },
+                          {
+                            "wn30synsetkey": "hub.n.01",
+                            "text": "hub",
+                            "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                          },
+                          {
+                            "wn30synsetkey": "hubcap.n.01",
+                            "text": "hubcap",
+                            "gloss": "cap that fits over the hub of a wheel"
+                          },
+                          {
+                            "wn30synsetkey": "rim.n.03",
+                            "text": "rim",
+                            "gloss": "the outer part of a wheel to which the tire is attached"
+                          }
+                        ],
+                        "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                      },
+                      {
+                        "wn30synsetkey": "brake.n.01",
+                        "text": "brake",
+                        "gloss": "a restraint used to slow or stop a vehicle"
+                      }
+                    ],
+                    "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+                  }
+                ],
+                "gloss": "one of the supports for a piece of furniture"
+              },
+              {
+                "wn30synsetkey": "rocker.n.07",
+                "text": "rocker",
+                "gloss": "a curved support that permits the supported object to rock to and fro"
+              }
+            ],
+            "gloss": "undefined"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "pedestal_base",
+            "nodes": [
+              {
+                "wn30synsetkey": "leg.n.03",
+                "text": "furniture_leg",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "foot.n.11",
+                    "text": "furniture_foot",
+                    "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+                  },
+                  {
+                    "wn30synsetkey": "caster.n.03",
+                    "text": "caster",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "undefined",
+                        "text": "caster_rig",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "plate.n.02",
+                            "text": "mounting_plate",
+                            "gloss": "a sheet of metal or wood or glass or plastic"
+                          }
+                        ],
+                        "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                      },
+                      {
+                        "wn30synsetkey": "wheel.n.01",
+                        "text": "wheel",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "spoke.n.01",
+                            "text": "spoke",
+                            "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                          },
+                          {
+                            "wn30synsetkey": "hub.n.01",
+                            "text": "hub",
+                            "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                          },
+                          {
+                            "wn30synsetkey": "hubcap.n.01",
+                            "text": "hubcap",
+                            "gloss": "cap that fits over the hub of a wheel"
+                          },
+                          {
+                            "wn30synsetkey": "rim.n.03",
+                            "text": "rim",
+                            "gloss": "the outer part of a wheel to which the tire is attached"
+                          }
+                        ],
+                        "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                      },
+                      {
+                        "wn30synsetkey": "brake.n.01",
+                        "text": "brake",
+                        "gloss": "a restraint used to slow or stop a vehicle"
+                      }
+                    ],
+                    "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+                  }
+                ],
+                "gloss": "one of the supports for a piece of furniture"
+              },
+              {
+                "wn30synsetkey": "pedestal.n.03",
+                "text": "pedestal",
+                "gloss": "an architectural support or base (as for a column or statue)"
+              },
+              {
+                "wn30synsetkey": "undefined",
+                "text": "plinth",
+                "gloss": "the lower square slab at the base of a pedestal"
+              }
+            ],
+            "gloss": "undefined"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "caster_base",
+            "nodes": [
+              {
+                "wn30synsetkey": "caster.n.03",
+                "text": "caster",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "undefined",
+                    "text": "caster_rig",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "plate.n.02",
+                        "text": "mounting_plate",
+                        "gloss": "a sheet of metal or wood or glass or plastic"
+                      }
+                    ],
+                    "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                  },
+                  {
+                    "wn30synsetkey": "wheel.n.01",
+                    "text": "wheel",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "spoke.n.01",
+                        "text": "spoke",
+                        "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                      },
+                      {
+                        "wn30synsetkey": "hub.n.01",
+                        "text": "hub",
+                        "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                      },
+                      {
+                        "wn30synsetkey": "hubcap.n.01",
+                        "text": "hubcap",
+                        "gloss": "cap that fits over the hub of a wheel"
+                      },
+                      {
+                        "wn30synsetkey": "rim.n.03",
+                        "text": "rim",
+                        "gloss": "the outer part of a wheel to which the tire is attached"
+                      }
+                    ],
+                    "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                  },
+                  {
+                    "wn30synsetkey": "brake.n.01",
+                    "text": "brake",
+                    "gloss": "a restraint used to slow or stop a vehicle"
+                  }
+                ],
+                "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+              }
+            ],
+            "gloss": "undefined"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "foot_base",
+            "nodes": [
+              {
+                "wn30synsetkey": "foot.n.11",
+                "text": "furniture_foot",
+                "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+              }
+            ],
+            "gloss": "undefined"
+          }
+        ],
+        "gloss": "a support or foundation; \"the base of the lamp\""
+      },
+      {
+        "wn30synsetkey": "back.n.08",
+        "text": "chair_back",
+        "nodes": [
+          {
+            "wn30synsetkey": "spindle.n.02",
+            "text": "spindle",
+            "gloss": "A cylindrically symmetric shaft, usually made of wood."
+          },
+          {
+            "wn30synsetkey": "rail.n.04",
+            "text": "rail",
+            "gloss": "horizontal bar (usually of wood or metal)"
+          },
+          {
+            "wn30synsetkey": "splat.n.02",
+            "text": "splat",
+            "gloss": "a slat of wood in the middle of the back of a straight chair"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "stile",
+            "gloss": "outside vertical framing member (of the back)"
+          },
+          {
+            "wn30synsetkey": "headrest.n.02",
+            "text": "headrest",
+            "gloss": "a rest for the head"
+          },
+          {
+            "wn30synsetkey": "cushion.n.03",
+            "text": "cushion",
+            "gloss": "a soft bag filled with air or a mass of padding such as feathers or foam rubber etc."
+          }
+        ],
+        "gloss": "a support that you can lean against while sitting; \"the back of the dental chair was adjustable\""
+      },
+      {
+        "wn30synsetkey": "arm.n.04",
+        "text": "arm",
+        "nodes": [
+          {
+            "wn30synsetkey": "armrest.n.01",
+            "text": "armrest",
+            "gloss": "Part that supports your elbow and forearm"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "arm_support",
+            "gloss": "The upright piece which supports the arm"
+          }
+        ],
+        "gloss": "the part of an armchair or sofa that supports the elbow and forearm of a seated person"
+      }
+    ],
+    "gloss": "furniture that is designed for sitting on; \"there were not enough seats for all the guests\""
+  },
+  {
+    "wn30synsetkey": "stool.n.01",
+    "text": "stool",
+    "nodes": [
+      {
+        "wn30synsetkey": "seat.n.04",
+        "text": "seat",
+        "nodes": [
+          {
+            "wn30synsetkey": "undefined",
+            "text": "apron",
+            "gloss": "The strips that run between the legs and connects to the surface (seat)"
+          },
+          {
+            "wn30synsetkey": "cushion.n.03",
+            "text": "cushion",
+            "gloss": "a soft bag filled with air or a mass of padding such as feathers or foam rubber etc."
+          },
+          {
+            "wn30synsetkey": "pillow.n.01",
+            "text": "pillow",
+            "gloss": "a cushion to support the head of a sleeping person"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "seat_surface",
+            "gloss": "undefined"
+          }
+        ],
+        "gloss": "any support where you can sit (especially the part of a chair or bench etc. on which you sit); \"he dusted off the seat before sitting down\""
+      },
+      {
+        "wn30synsetkey": "undefined",
+        "text": "leg_base",
+        "nodes": [
+          {
+            "wn30synsetkey": "undefined",
+            "text": "stretcher",
+            "gloss": "horizontal support element joining the legs"
+          },
+          {
+            "wn30synsetkey": "leg.n.03",
+            "text": "furniture_leg",
+            "nodes": [
+              {
+                "wn30synsetkey": "foot.n.11",
+                "text": "furniture_foot",
+                "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+              },
+              {
+                "wn30synsetkey": "caster.n.03",
+                "text": "caster",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "undefined",
+                    "text": "caster_rig",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "plate.n.02",
+                        "text": "mounting_plate",
+                        "gloss": "a sheet of metal or wood or glass or plastic"
+                      }
+                    ],
+                    "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                  },
+                  {
+                    "wn30synsetkey": "wheel.n.01",
+                    "text": "wheel",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "spoke.n.01",
+                        "text": "spoke",
+                        "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                      },
+                      {
+                        "wn30synsetkey": "hub.n.01",
+                        "text": "hub",
+                        "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                      },
+                      {
+                        "wn30synsetkey": "hubcap.n.01",
+                        "text": "hubcap",
+                        "gloss": "cap that fits over the hub of a wheel"
+                      },
+                      {
+                        "wn30synsetkey": "rim.n.03",
+                        "text": "rim",
+                        "gloss": "the outer part of a wheel to which the tire is attached"
+                      }
+                    ],
+                    "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                  },
+                  {
+                    "wn30synsetkey": "brake.n.01",
+                    "text": "brake",
+                    "gloss": "a restraint used to slow or stop a vehicle"
+                  }
+                ],
+                "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+              }
+            ],
+            "gloss": "one of the supports for a piece of furniture"
+          }
+        ],
+        "gloss": "undefined"
+      }
+    ],
+    "gloss": "a simple seat without a back or arms"
+  },
+  {
+    "wn30synsetkey": "undefined",
+    "text": "barstool",
+    "nodes": [
+      {
+        "wn30synsetkey": "seat.n.04",
+        "text": "seat",
+        "nodes": [
+          {
+            "wn30synsetkey": "undefined",
+            "text": "apron",
+            "gloss": "The strips that run between the legs and connects to the surface (seat)"
+          },
+          {
+            "wn30synsetkey": "cushion.n.03",
+            "text": "cushion",
+            "gloss": "a soft bag filled with air or a mass of padding such as feathers or foam rubber etc."
+          },
+          {
+            "wn30synsetkey": "pillow.n.01",
+            "text": "pillow",
+            "gloss": "a cushion to support the head of a sleeping person"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "seat_surface",
+            "gloss": "undefined"
+          }
+        ],
+        "gloss": "any support where you can sit (especially the part of a chair or bench etc. on which you sit); \"he dusted off the seat before sitting down\""
+      },
+      {
+        "wn30synsetkey": "base.n.08",
+        "text": "chair_base",
+        "nodes": [
+          {
+            "wn30synsetkey": "undefined",
+            "text": "swivel_base",
+            "nodes": [
+              {
+                "text": "footrest_ring"
+              },
+              {
+                "wn30synsetkey": "undefined",
+                "text": "gas_lift_cylinder",
+                "gloss": "mechanical devices which use the power of compressed gas to produce a force in a reciprocating linear motion."
+              },
+              {
+                "wn30synsetkey": "undefined",
+                "text": "tilt_control_and_gas_lift_mechanism",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "lever.n.01",
+                    "text": "lever",
+                    "gloss": "a rigid bar pivoted about a fulcrum"
+                  },
+                  {
+                    "wn30synsetkey": "plate.n.02",
+                    "text": "mounting_plate",
+                    "gloss": "a sheet of metal or wood or glass or plastic"
+                  },
+                  {
+                    "wn30synsetkey": "knob.n.02",
+                    "text": "knob",
+                    "gloss": "a round handle"
+                  }
+                ],
+                "gloss": "The gas lift mechanism allows the user to adjust the chair to the preferred, ergonomically correct position."
+              },
+              {
+                "wn30synsetkey": "swivel.n.01",
+                "text": "swivel",
+                "gloss": "a coupling (as in a chain) that has one end that turns on a headed pin"
+              },
+              {
+                "wn30synsetkey": "undefined",
+                "text": "star_swivel_base",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "leg.n.03",
+                    "text": "furniture_leg",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "foot.n.11",
+                        "text": "furniture_foot",
+                        "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+                      },
+                      {
+                        "wn30synsetkey": "caster.n.03",
+                        "text": "caster",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "undefined",
+                            "text": "caster_rig",
+                            "nodes": [
+                              {
+                                "wn30synsetkey": "plate.n.02",
+                                "text": "mounting_plate",
+                                "gloss": "a sheet of metal or wood or glass or plastic"
+                              }
+                            ],
+                            "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                          },
+                          {
+                            "wn30synsetkey": "wheel.n.01",
+                            "text": "wheel",
+                            "nodes": [
+                              {
+                                "wn30synsetkey": "spoke.n.01",
+                                "text": "spoke",
+                                "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                              },
+                              {
+                                "wn30synsetkey": "hub.n.01",
+                                "text": "hub",
+                                "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                              },
+                              {
+                                "wn30synsetkey": "hubcap.n.01",
+                                "text": "hubcap",
+                                "gloss": "cap that fits over the hub of a wheel"
+                              },
+                              {
+                                "wn30synsetkey": "rim.n.03",
+                                "text": "rim",
+                                "gloss": "the outer part of a wheel to which the tire is attached"
+                              }
+                            ],
+                            "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                          },
+                          {
+                            "wn30synsetkey": "brake.n.01",
+                            "text": "brake",
+                            "gloss": "a restraint used to slow or stop a vehicle"
+                          }
+                        ],
+                        "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+                      }
+                    ],
+                    "gloss": "one of the supports for a piece of furniture"
+                  }
+                ],
+                "gloss": "swivel base with a star shape"
+              }
+            ],
+            "gloss": "undefined"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "leg_base",
+            "nodes": [
+              {
+                "wn30synsetkey": "undefined",
+                "text": "stretcher",
+                "gloss": "horizontal support element joining the legs"
+              },
+              {
+                "wn30synsetkey": "leg.n.03",
+                "text": "furniture_leg",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "foot.n.11",
+                    "text": "furniture_foot",
+                    "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+                  },
+                  {
+                    "wn30synsetkey": "caster.n.03",
+                    "text": "caster",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "undefined",
+                        "text": "caster_rig",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "plate.n.02",
+                            "text": "mounting_plate",
+                            "gloss": "a sheet of metal or wood or glass or plastic"
+                          }
+                        ],
+                        "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                      },
+                      {
+                        "wn30synsetkey": "wheel.n.01",
+                        "text": "wheel",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "spoke.n.01",
+                            "text": "spoke",
+                            "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                          },
+                          {
+                            "wn30synsetkey": "hub.n.01",
+                            "text": "hub",
+                            "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                          },
+                          {
+                            "wn30synsetkey": "hubcap.n.01",
+                            "text": "hubcap",
+                            "gloss": "cap that fits over the hub of a wheel"
+                          },
+                          {
+                            "wn30synsetkey": "rim.n.03",
+                            "text": "rim",
+                            "gloss": "the outer part of a wheel to which the tire is attached"
+                          }
+                        ],
+                        "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                      },
+                      {
+                        "wn30synsetkey": "brake.n.01",
+                        "text": "brake",
+                        "gloss": "a restraint used to slow or stop a vehicle"
+                      }
+                    ],
+                    "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+                  }
+                ],
+                "gloss": "one of the supports for a piece of furniture"
+              }
+            ],
+            "gloss": "undefined"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "rocker_base",
+            "nodes": [
+              {
+                "wn30synsetkey": "undefined",
+                "text": "stretcher",
+                "gloss": "horizontal support element joining the legs"
+              },
+              {
+                "wn30synsetkey": "leg.n.03",
+                "text": "furniture_leg",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "foot.n.11",
+                    "text": "furniture_foot",
+                    "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+                  },
+                  {
+                    "wn30synsetkey": "caster.n.03",
+                    "text": "caster",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "undefined",
+                        "text": "caster_rig",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "plate.n.02",
+                            "text": "mounting_plate",
+                            "gloss": "a sheet of metal or wood or glass or plastic"
+                          }
+                        ],
+                        "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                      },
+                      {
+                        "wn30synsetkey": "wheel.n.01",
+                        "text": "wheel",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "spoke.n.01",
+                            "text": "spoke",
+                            "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                          },
+                          {
+                            "wn30synsetkey": "hub.n.01",
+                            "text": "hub",
+                            "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                          },
+                          {
+                            "wn30synsetkey": "hubcap.n.01",
+                            "text": "hubcap",
+                            "gloss": "cap that fits over the hub of a wheel"
+                          },
+                          {
+                            "wn30synsetkey": "rim.n.03",
+                            "text": "rim",
+                            "gloss": "the outer part of a wheel to which the tire is attached"
+                          }
+                        ],
+                        "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                      },
+                      {
+                        "wn30synsetkey": "brake.n.01",
+                        "text": "brake",
+                        "gloss": "a restraint used to slow or stop a vehicle"
+                      }
+                    ],
+                    "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+                  }
+                ],
+                "gloss": "one of the supports for a piece of furniture"
+              },
+              {
+                "wn30synsetkey": "rocker.n.07",
+                "text": "rocker",
+                "gloss": "a curved support that permits the supported object to rock to and fro"
+              }
+            ],
+            "gloss": "undefined"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "pedestal_base",
+            "nodes": [
+              {
+                "wn30synsetkey": "leg.n.03",
+                "text": "furniture_leg",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "foot.n.11",
+                    "text": "furniture_foot",
+                    "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+                  },
+                  {
+                    "wn30synsetkey": "caster.n.03",
+                    "text": "caster",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "undefined",
+                        "text": "caster_rig",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "plate.n.02",
+                            "text": "mounting_plate",
+                            "gloss": "a sheet of metal or wood or glass or plastic"
+                          }
+                        ],
+                        "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                      },
+                      {
+                        "wn30synsetkey": "wheel.n.01",
+                        "text": "wheel",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "spoke.n.01",
+                            "text": "spoke",
+                            "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                          },
+                          {
+                            "wn30synsetkey": "hub.n.01",
+                            "text": "hub",
+                            "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                          },
+                          {
+                            "wn30synsetkey": "hubcap.n.01",
+                            "text": "hubcap",
+                            "gloss": "cap that fits over the hub of a wheel"
+                          },
+                          {
+                            "wn30synsetkey": "rim.n.03",
+                            "text": "rim",
+                            "gloss": "the outer part of a wheel to which the tire is attached"
+                          }
+                        ],
+                        "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                      },
+                      {
+                        "wn30synsetkey": "brake.n.01",
+                        "text": "brake",
+                        "gloss": "a restraint used to slow or stop a vehicle"
+                      }
+                    ],
+                    "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+                  }
+                ],
+                "gloss": "one of the supports for a piece of furniture"
+              },
+              {
+                "wn30synsetkey": "pedestal.n.03",
+                "text": "pedestal",
+                "gloss": "an architectural support or base (as for a column or statue)"
+              },
+              {
+                "wn30synsetkey": "undefined",
+                "text": "plinth",
+                "gloss": "the lower square slab at the base of a pedestal"
+              }
+            ],
+            "gloss": "undefined"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "caster_base",
+            "nodes": [
+              {
+                "wn30synsetkey": "caster.n.03",
+                "text": "caster",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "undefined",
+                    "text": "caster_rig",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "plate.n.02",
+                        "text": "mounting_plate",
+                        "gloss": "a sheet of metal or wood or glass or plastic"
+                      }
+                    ],
+                    "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                  },
+                  {
+                    "wn30synsetkey": "wheel.n.01",
+                    "text": "wheel",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "spoke.n.01",
+                        "text": "spoke",
+                        "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                      },
+                      {
+                        "wn30synsetkey": "hub.n.01",
+                        "text": "hub",
+                        "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                      },
+                      {
+                        "wn30synsetkey": "hubcap.n.01",
+                        "text": "hubcap",
+                        "gloss": "cap that fits over the hub of a wheel"
+                      },
+                      {
+                        "wn30synsetkey": "rim.n.03",
+                        "text": "rim",
+                        "gloss": "the outer part of a wheel to which the tire is attached"
+                      }
+                    ],
+                    "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                  },
+                  {
+                    "wn30synsetkey": "brake.n.01",
+                    "text": "brake",
+                    "gloss": "a restraint used to slow or stop a vehicle"
+                  }
+                ],
+                "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+              }
+            ],
+            "gloss": "undefined"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "foot_base",
+            "nodes": [
+              {
+                "wn30synsetkey": "foot.n.11",
+                "text": "furniture_foot",
+                "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+              }
+            ],
+            "gloss": "undefined"
+          }
+        ],
+        "gloss": "a support or foundation; \"the base of the lamp\""
+      },
+      {
+        "wn30synsetkey": "back.n.08",
+        "text": "chair_back",
+        "nodes": [
+          {
+            "wn30synsetkey": "spindle.n.02",
+            "text": "spindle",
+            "gloss": "A cylindrically symmetric shaft, usually made of wood."
+          },
+          {
+            "wn30synsetkey": "rail.n.04",
+            "text": "rail",
+            "gloss": "horizontal bar (usually of wood or metal)"
+          },
+          {
+            "wn30synsetkey": "splat.n.02",
+            "text": "splat",
+            "gloss": "a slat of wood in the middle of the back of a straight chair"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "stile",
+            "gloss": "outside vertical framing member (of the back)"
+          },
+          {
+            "wn30synsetkey": "headrest.n.02",
+            "text": "headrest",
+            "gloss": "a rest for the head"
+          },
+          {
+            "wn30synsetkey": "cushion.n.03",
+            "text": "cushion",
+            "gloss": "a soft bag filled with air or a mass of padding such as feathers or foam rubber etc."
+          }
+        ],
+        "gloss": "a support that you can lean against while sitting; \"the back of the dental chair was adjustable\""
+      },
+      {
+        "wn30synsetkey": "arm.n.04",
+        "text": "arm",
+        "nodes": [
+          {
+            "wn30synsetkey": "armrest.n.01",
+            "text": "armrest",
+            "gloss": "Part that supports your elbow and forearm"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "arm_support",
+            "gloss": "The upright piece which supports the arm"
+          }
+        ],
+        "gloss": "the part of an armchair or sofa that supports the elbow and forearm of a seated person"
+      }
+    ],
+    "gloss": "a high stool that usually has a round seat fixed permanently on a central post"
+  },
+  {
+    "wn30synsetkey": "undefined",
+    "text": "ottoman",
+    "nodes": [
+      {
+        "wn30synsetkey": "seat.n.04",
+        "text": "seat",
+        "nodes": [
+          {
+            "wn30synsetkey": "undefined",
+            "text": "apron",
+            "gloss": "The strips that run between the legs and connects to the surface (seat)"
+          },
+          {
+            "wn30synsetkey": "cushion.n.03",
+            "text": "cushion",
+            "gloss": "a soft bag filled with air or a mass of padding such as feathers or foam rubber etc."
+          },
+          {
+            "wn30synsetkey": "pillow.n.01",
+            "text": "pillow",
+            "gloss": "a cushion to support the head of a sleeping person"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "seat_surface",
+            "gloss": "undefined"
+          }
+        ],
+        "gloss": "any support where you can sit (especially the part of a chair or bench etc. on which you sit); \"he dusted off the seat before sitting down\""
+      },
+      {
+        "wn30synsetkey": "undefined",
+        "text": "foot_or_caster_base",
+        "nodes": [
+          {
+            "wn30synsetkey": "undefined",
+            "text": "foot_base",
+            "nodes": [
+              {
+                "wn30synsetkey": "foot.n.11",
+                "text": "furniture_foot",
+                "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+              }
+            ],
+            "gloss": "undefined"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "caster_base",
+            "nodes": [
+              {
+                "wn30synsetkey": "caster.n.03",
+                "text": "caster",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "undefined",
+                    "text": "caster_rig",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "plate.n.02",
+                        "text": "mounting_plate",
+                        "gloss": "a sheet of metal or wood or glass or plastic"
+                      }
+                    ],
+                    "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                  },
+                  {
+                    "wn30synsetkey": "wheel.n.01",
+                    "text": "wheel",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "spoke.n.01",
+                        "text": "spoke",
+                        "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                      },
+                      {
+                        "wn30synsetkey": "hub.n.01",
+                        "text": "hub",
+                        "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                      },
+                      {
+                        "wn30synsetkey": "hubcap.n.01",
+                        "text": "hubcap",
+                        "gloss": "cap that fits over the hub of a wheel"
+                      },
+                      {
+                        "wn30synsetkey": "rim.n.03",
+                        "text": "rim",
+                        "gloss": "the outer part of a wheel to which the tire is attached"
+                      }
+                    ],
+                    "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                  },
+                  {
+                    "wn30synsetkey": "brake.n.01",
+                    "text": "brake",
+                    "gloss": "a restraint used to slow or stop a vehicle"
+                  }
+                ],
+                "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+              }
+            ],
+            "gloss": "undefined"
+          }
+        ],
+        "gloss": "undefined"
+      }
+    ],
+    "gloss": "A piece of furniture consisting of a padded, upholstered seat or bench, usually having neither a back nor arms, often used as a stool, footstool or, in some cases, as a coffee table"
+  },
+  {
+    "wn30synsetkey": "swivel_chair.n.01",
+    "text": "swivel chair",
+    "nodes": [
+      {
+        "wn30synsetkey": "seat.n.04",
+        "text": "seat",
+        "nodes": [
+          {
+            "wn30synsetkey": "undefined",
+            "text": "apron",
+            "gloss": "The strips that run between the legs and connects to the surface (seat)"
+          },
+          {
+            "wn30synsetkey": "cushion.n.03",
+            "text": "cushion",
+            "gloss": "a soft bag filled with air or a mass of padding such as feathers or foam rubber etc."
+          },
+          {
+            "wn30synsetkey": "pillow.n.01",
+            "text": "pillow",
+            "gloss": "a cushion to support the head of a sleeping person"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "seat_surface",
+            "gloss": "undefined"
+          }
+        ],
+        "gloss": "any support where you can sit (especially the part of a chair or bench etc. on which you sit); \"he dusted off the seat before sitting down\""
+      },
+      {
+        "text": "swivel_chair_base"
+      },
+      {
+        "wn30synsetkey": "back.n.08",
+        "text": "chair_back",
+        "nodes": [
+          {
+            "wn30synsetkey": "spindle.n.02",
+            "text": "spindle",
+            "gloss": "A cylindrically symmetric shaft, usually made of wood."
+          },
+          {
+            "wn30synsetkey": "rail.n.04",
+            "text": "rail",
+            "gloss": "horizontal bar (usually of wood or metal)"
+          },
+          {
+            "wn30synsetkey": "splat.n.02",
+            "text": "splat",
+            "gloss": "a slat of wood in the middle of the back of a straight chair"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "stile",
+            "gloss": "outside vertical framing member (of the back)"
+          },
+          {
+            "wn30synsetkey": "headrest.n.02",
+            "text": "headrest",
+            "gloss": "a rest for the head"
+          },
+          {
+            "wn30synsetkey": "cushion.n.03",
+            "text": "cushion",
+            "gloss": "a soft bag filled with air or a mass of padding such as feathers or foam rubber etc."
+          }
+        ],
+        "gloss": "a support that you can lean against while sitting; \"the back of the dental chair was adjustable\""
+      },
+      {
+        "wn30synsetkey": "arm.n.04",
+        "text": "arm",
+        "nodes": [
+          {
+            "wn30synsetkey": "armrest.n.01",
+            "text": "armrest",
+            "gloss": "Part that supports your elbow and forearm"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "arm_support",
+            "gloss": "The upright piece which supports the arm"
+          }
+        ],
+        "gloss": "the part of an armchair or sofa that supports the elbow and forearm of a seated person"
+      }
+    ],
+    "gloss": "a chair that swivels on its base"
+  },
+  {
+    "wn30synsetkey": "straight_chair.n.01",
+    "text": "straight chair",
+    "nodes": [
+      {
+        "wn30synsetkey": "seat.n.04",
+        "text": "seat",
+        "nodes": [
+          {
+            "wn30synsetkey": "undefined",
+            "text": "apron",
+            "gloss": "The strips that run between the legs and connects to the surface (seat)"
+          },
+          {
+            "wn30synsetkey": "cushion.n.03",
+            "text": "cushion",
+            "gloss": "a soft bag filled with air or a mass of padding such as feathers or foam rubber etc."
+          },
+          {
+            "wn30synsetkey": "pillow.n.01",
+            "text": "pillow",
+            "gloss": "a cushion to support the head of a sleeping person"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "seat_surface",
+            "gloss": "undefined"
+          }
+        ],
+        "gloss": "any support where you can sit (especially the part of a chair or bench etc. on which you sit); \"he dusted off the seat before sitting down\""
+      },
+      {
+        "wn30synsetkey": "undefined",
+        "text": "leg_base",
+        "nodes": [
+          {
+            "wn30synsetkey": "undefined",
+            "text": "stretcher",
+            "gloss": "horizontal support element joining the legs"
+          },
+          {
+            "wn30synsetkey": "leg.n.03",
+            "text": "furniture_leg",
+            "nodes": [
+              {
+                "wn30synsetkey": "foot.n.11",
+                "text": "furniture_foot",
+                "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+              },
+              {
+                "wn30synsetkey": "caster.n.03",
+                "text": "caster",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "undefined",
+                    "text": "caster_rig",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "plate.n.02",
+                        "text": "mounting_plate",
+                        "gloss": "a sheet of metal or wood or glass or plastic"
+                      }
+                    ],
+                    "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                  },
+                  {
+                    "wn30synsetkey": "wheel.n.01",
+                    "text": "wheel",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "spoke.n.01",
+                        "text": "spoke",
+                        "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                      },
+                      {
+                        "wn30synsetkey": "hub.n.01",
+                        "text": "hub",
+                        "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                      },
+                      {
+                        "wn30synsetkey": "hubcap.n.01",
+                        "text": "hubcap",
+                        "gloss": "cap that fits over the hub of a wheel"
+                      },
+                      {
+                        "wn30synsetkey": "rim.n.03",
+                        "text": "rim",
+                        "gloss": "the outer part of a wheel to which the tire is attached"
+                      }
+                    ],
+                    "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                  },
+                  {
+                    "wn30synsetkey": "brake.n.01",
+                    "text": "brake",
+                    "gloss": "a restraint used to slow or stop a vehicle"
+                  }
+                ],
+                "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+              }
+            ],
+            "gloss": "one of the supports for a piece of furniture"
+          }
+        ],
+        "gloss": "undefined"
+      },
+      {
+        "wn30synsetkey": "back.n.08",
+        "text": "chair_back",
+        "nodes": [
+          {
+            "wn30synsetkey": "spindle.n.02",
+            "text": "spindle",
+            "gloss": "A cylindrically symmetric shaft, usually made of wood."
+          },
+          {
+            "wn30synsetkey": "rail.n.04",
+            "text": "rail",
+            "gloss": "horizontal bar (usually of wood or metal)"
+          },
+          {
+            "wn30synsetkey": "splat.n.02",
+            "text": "splat",
+            "gloss": "a slat of wood in the middle of the back of a straight chair"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "stile",
+            "gloss": "outside vertical framing member (of the back)"
+          },
+          {
+            "wn30synsetkey": "headrest.n.02",
+            "text": "headrest",
+            "gloss": "a rest for the head"
+          },
+          {
+            "wn30synsetkey": "cushion.n.03",
+            "text": "cushion",
+            "gloss": "a soft bag filled with air or a mass of padding such as feathers or foam rubber etc."
+          }
+        ],
+        "gloss": "a support that you can lean against while sitting; \"the back of the dental chair was adjustable\""
+      }
+    ],
+    "gloss": "a straight-backed chair without arms"
+  },
+  {
+    "wn30synsetkey": "armchair.n.01",
+    "text": "armchair",
+    "nodes": [
+      {
+        "wn30synsetkey": "seat.n.04",
+        "text": "seat",
+        "nodes": [
+          {
+            "wn30synsetkey": "undefined",
+            "text": "apron",
+            "gloss": "The strips that run between the legs and connects to the surface (seat)"
+          },
+          {
+            "wn30synsetkey": "cushion.n.03",
+            "text": "cushion",
+            "gloss": "a soft bag filled with air or a mass of padding such as feathers or foam rubber etc."
+          },
+          {
+            "wn30synsetkey": "pillow.n.01",
+            "text": "pillow",
+            "gloss": "a cushion to support the head of a sleeping person"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "seat_surface",
+            "gloss": "undefined"
+          }
+        ],
+        "gloss": "any support where you can sit (especially the part of a chair or bench etc. on which you sit); \"he dusted off the seat before sitting down\""
+      },
+      {
+        "wn30synsetkey": "base.n.08",
+        "text": "chair_base",
+        "nodes": [
+          {
+            "wn30synsetkey": "undefined",
+            "text": "swivel_base",
+            "nodes": [
+              {
+                "text": "footrest_ring"
+              },
+              {
+                "wn30synsetkey": "undefined",
+                "text": "gas_lift_cylinder",
+                "gloss": "mechanical devices which use the power of compressed gas to produce a force in a reciprocating linear motion."
+              },
+              {
+                "wn30synsetkey": "undefined",
+                "text": "tilt_control_and_gas_lift_mechanism",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "lever.n.01",
+                    "text": "lever",
+                    "gloss": "a rigid bar pivoted about a fulcrum"
+                  },
+                  {
+                    "wn30synsetkey": "plate.n.02",
+                    "text": "mounting_plate",
+                    "gloss": "a sheet of metal or wood or glass or plastic"
+                  },
+                  {
+                    "wn30synsetkey": "knob.n.02",
+                    "text": "knob",
+                    "gloss": "a round handle"
+                  }
+                ],
+                "gloss": "The gas lift mechanism allows the user to adjust the chair to the preferred, ergonomically correct position."
+              },
+              {
+                "wn30synsetkey": "swivel.n.01",
+                "text": "swivel",
+                "gloss": "a coupling (as in a chain) that has one end that turns on a headed pin"
+              },
+              {
+                "wn30synsetkey": "undefined",
+                "text": "star_swivel_base",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "leg.n.03",
+                    "text": "furniture_leg",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "foot.n.11",
+                        "text": "furniture_foot",
+                        "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+                      },
+                      {
+                        "wn30synsetkey": "caster.n.03",
+                        "text": "caster",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "undefined",
+                            "text": "caster_rig",
+                            "nodes": [
+                              {
+                                "wn30synsetkey": "plate.n.02",
+                                "text": "mounting_plate",
+                                "gloss": "a sheet of metal or wood or glass or plastic"
+                              }
+                            ],
+                            "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                          },
+                          {
+                            "wn30synsetkey": "wheel.n.01",
+                            "text": "wheel",
+                            "nodes": [
+                              {
+                                "wn30synsetkey": "spoke.n.01",
+                                "text": "spoke",
+                                "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                              },
+                              {
+                                "wn30synsetkey": "hub.n.01",
+                                "text": "hub",
+                                "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                              },
+                              {
+                                "wn30synsetkey": "hubcap.n.01",
+                                "text": "hubcap",
+                                "gloss": "cap that fits over the hub of a wheel"
+                              },
+                              {
+                                "wn30synsetkey": "rim.n.03",
+                                "text": "rim",
+                                "gloss": "the outer part of a wheel to which the tire is attached"
+                              }
+                            ],
+                            "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                          },
+                          {
+                            "wn30synsetkey": "brake.n.01",
+                            "text": "brake",
+                            "gloss": "a restraint used to slow or stop a vehicle"
+                          }
+                        ],
+                        "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+                      }
+                    ],
+                    "gloss": "one of the supports for a piece of furniture"
+                  }
+                ],
+                "gloss": "swivel base with a star shape"
+              }
+            ],
+            "gloss": "undefined"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "leg_base",
+            "nodes": [
+              {
+                "wn30synsetkey": "undefined",
+                "text": "stretcher",
+                "gloss": "horizontal support element joining the legs"
+              },
+              {
+                "wn30synsetkey": "leg.n.03",
+                "text": "furniture_leg",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "foot.n.11",
+                    "text": "furniture_foot",
+                    "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+                  },
+                  {
+                    "wn30synsetkey": "caster.n.03",
+                    "text": "caster",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "undefined",
+                        "text": "caster_rig",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "plate.n.02",
+                            "text": "mounting_plate",
+                            "gloss": "a sheet of metal or wood or glass or plastic"
+                          }
+                        ],
+                        "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                      },
+                      {
+                        "wn30synsetkey": "wheel.n.01",
+                        "text": "wheel",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "spoke.n.01",
+                            "text": "spoke",
+                            "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                          },
+                          {
+                            "wn30synsetkey": "hub.n.01",
+                            "text": "hub",
+                            "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                          },
+                          {
+                            "wn30synsetkey": "hubcap.n.01",
+                            "text": "hubcap",
+                            "gloss": "cap that fits over the hub of a wheel"
+                          },
+                          {
+                            "wn30synsetkey": "rim.n.03",
+                            "text": "rim",
+                            "gloss": "the outer part of a wheel to which the tire is attached"
+                          }
+                        ],
+                        "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                      },
+                      {
+                        "wn30synsetkey": "brake.n.01",
+                        "text": "brake",
+                        "gloss": "a restraint used to slow or stop a vehicle"
+                      }
+                    ],
+                    "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+                  }
+                ],
+                "gloss": "one of the supports for a piece of furniture"
+              }
+            ],
+            "gloss": "undefined"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "rocker_base",
+            "nodes": [
+              {
+                "wn30synsetkey": "undefined",
+                "text": "stretcher",
+                "gloss": "horizontal support element joining the legs"
+              },
+              {
+                "wn30synsetkey": "leg.n.03",
+                "text": "furniture_leg",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "foot.n.11",
+                    "text": "furniture_foot",
+                    "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+                  },
+                  {
+                    "wn30synsetkey": "caster.n.03",
+                    "text": "caster",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "undefined",
+                        "text": "caster_rig",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "plate.n.02",
+                            "text": "mounting_plate",
+                            "gloss": "a sheet of metal or wood or glass or plastic"
+                          }
+                        ],
+                        "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                      },
+                      {
+                        "wn30synsetkey": "wheel.n.01",
+                        "text": "wheel",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "spoke.n.01",
+                            "text": "spoke",
+                            "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                          },
+                          {
+                            "wn30synsetkey": "hub.n.01",
+                            "text": "hub",
+                            "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                          },
+                          {
+                            "wn30synsetkey": "hubcap.n.01",
+                            "text": "hubcap",
+                            "gloss": "cap that fits over the hub of a wheel"
+                          },
+                          {
+                            "wn30synsetkey": "rim.n.03",
+                            "text": "rim",
+                            "gloss": "the outer part of a wheel to which the tire is attached"
+                          }
+                        ],
+                        "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                      },
+                      {
+                        "wn30synsetkey": "brake.n.01",
+                        "text": "brake",
+                        "gloss": "a restraint used to slow or stop a vehicle"
+                      }
+                    ],
+                    "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+                  }
+                ],
+                "gloss": "one of the supports for a piece of furniture"
+              },
+              {
+                "wn30synsetkey": "rocker.n.07",
+                "text": "rocker",
+                "gloss": "a curved support that permits the supported object to rock to and fro"
+              }
+            ],
+            "gloss": "undefined"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "pedestal_base",
+            "nodes": [
+              {
+                "wn30synsetkey": "leg.n.03",
+                "text": "furniture_leg",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "foot.n.11",
+                    "text": "furniture_foot",
+                    "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+                  },
+                  {
+                    "wn30synsetkey": "caster.n.03",
+                    "text": "caster",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "undefined",
+                        "text": "caster_rig",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "plate.n.02",
+                            "text": "mounting_plate",
+                            "gloss": "a sheet of metal or wood or glass or plastic"
+                          }
+                        ],
+                        "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                      },
+                      {
+                        "wn30synsetkey": "wheel.n.01",
+                        "text": "wheel",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "spoke.n.01",
+                            "text": "spoke",
+                            "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                          },
+                          {
+                            "wn30synsetkey": "hub.n.01",
+                            "text": "hub",
+                            "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                          },
+                          {
+                            "wn30synsetkey": "hubcap.n.01",
+                            "text": "hubcap",
+                            "gloss": "cap that fits over the hub of a wheel"
+                          },
+                          {
+                            "wn30synsetkey": "rim.n.03",
+                            "text": "rim",
+                            "gloss": "the outer part of a wheel to which the tire is attached"
+                          }
+                        ],
+                        "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                      },
+                      {
+                        "wn30synsetkey": "brake.n.01",
+                        "text": "brake",
+                        "gloss": "a restraint used to slow or stop a vehicle"
+                      }
+                    ],
+                    "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+                  }
+                ],
+                "gloss": "one of the supports for a piece of furniture"
+              },
+              {
+                "wn30synsetkey": "pedestal.n.03",
+                "text": "pedestal",
+                "gloss": "an architectural support or base (as for a column or statue)"
+              },
+              {
+                "wn30synsetkey": "undefined",
+                "text": "plinth",
+                "gloss": "the lower square slab at the base of a pedestal"
+              }
+            ],
+            "gloss": "undefined"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "caster_base",
+            "nodes": [
+              {
+                "wn30synsetkey": "caster.n.03",
+                "text": "caster",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "undefined",
+                    "text": "caster_rig",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "plate.n.02",
+                        "text": "mounting_plate",
+                        "gloss": "a sheet of metal or wood or glass or plastic"
+                      }
+                    ],
+                    "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                  },
+                  {
+                    "wn30synsetkey": "wheel.n.01",
+                    "text": "wheel",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "spoke.n.01",
+                        "text": "spoke",
+                        "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                      },
+                      {
+                        "wn30synsetkey": "hub.n.01",
+                        "text": "hub",
+                        "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                      },
+                      {
+                        "wn30synsetkey": "hubcap.n.01",
+                        "text": "hubcap",
+                        "gloss": "cap that fits over the hub of a wheel"
+                      },
+                      {
+                        "wn30synsetkey": "rim.n.03",
+                        "text": "rim",
+                        "gloss": "the outer part of a wheel to which the tire is attached"
+                      }
+                    ],
+                    "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                  },
+                  {
+                    "wn30synsetkey": "brake.n.01",
+                    "text": "brake",
+                    "gloss": "a restraint used to slow or stop a vehicle"
+                  }
+                ],
+                "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+              }
+            ],
+            "gloss": "undefined"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "foot_base",
+            "nodes": [
+              {
+                "wn30synsetkey": "foot.n.11",
+                "text": "furniture_foot",
+                "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+              }
+            ],
+            "gloss": "undefined"
+          }
+        ],
+        "gloss": "a support or foundation; \"the base of the lamp\""
+      },
+      {
+        "wn30synsetkey": "back.n.08",
+        "text": "chair_back",
+        "nodes": [
+          {
+            "wn30synsetkey": "spindle.n.02",
+            "text": "spindle",
+            "gloss": "A cylindrically symmetric shaft, usually made of wood."
+          },
+          {
+            "wn30synsetkey": "rail.n.04",
+            "text": "rail",
+            "gloss": "horizontal bar (usually of wood or metal)"
+          },
+          {
+            "wn30synsetkey": "splat.n.02",
+            "text": "splat",
+            "gloss": "a slat of wood in the middle of the back of a straight chair"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "stile",
+            "gloss": "outside vertical framing member (of the back)"
+          },
+          {
+            "wn30synsetkey": "headrest.n.02",
+            "text": "headrest",
+            "gloss": "a rest for the head"
+          },
+          {
+            "wn30synsetkey": "cushion.n.03",
+            "text": "cushion",
+            "gloss": "a soft bag filled with air or a mass of padding such as feathers or foam rubber etc."
+          }
+        ],
+        "gloss": "a support that you can lean against while sitting; \"the back of the dental chair was adjustable\""
+      },
+      {
+        "wn30synsetkey": "arm.n.04",
+        "text": "arm",
+        "nodes": [
+          {
+            "wn30synsetkey": "armrest.n.01",
+            "text": "armrest",
+            "gloss": "Part that supports your elbow and forearm"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "arm_support",
+            "gloss": "The upright piece which supports the arm"
+          }
+        ],
+        "gloss": "the part of an armchair or sofa that supports the elbow and forearm of a seated person"
+      }
+    ],
+    "gloss": "chair with a support on each side for arms"
+  },
+  {
+    "wn30synsetkey": "rocking_chair.n.01",
+    "text": "rocking chair",
+    "nodes": [
+      {
+        "wn30synsetkey": "seat.n.04",
+        "text": "seat",
+        "nodes": [
+          {
+            "wn30synsetkey": "undefined",
+            "text": "apron",
+            "gloss": "The strips that run between the legs and connects to the surface (seat)"
+          },
+          {
+            "wn30synsetkey": "cushion.n.03",
+            "text": "cushion",
+            "gloss": "a soft bag filled with air or a mass of padding such as feathers or foam rubber etc."
+          },
+          {
+            "wn30synsetkey": "pillow.n.01",
+            "text": "pillow",
+            "gloss": "a cushion to support the head of a sleeping person"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "seat_surface",
+            "gloss": "undefined"
+          }
+        ],
+        "gloss": "any support where you can sit (especially the part of a chair or bench etc. on which you sit); \"he dusted off the seat before sitting down\""
+      },
+      {
+        "wn30synsetkey": "undefined",
+        "text": "rocker_base",
+        "nodes": [
+          {
+            "wn30synsetkey": "undefined",
+            "text": "stretcher",
+            "gloss": "horizontal support element joining the legs"
+          },
+          {
+            "wn30synsetkey": "leg.n.03",
+            "text": "furniture_leg",
+            "nodes": [
+              {
+                "wn30synsetkey": "foot.n.11",
+                "text": "furniture_foot",
+                "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+              },
+              {
+                "wn30synsetkey": "caster.n.03",
+                "text": "caster",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "undefined",
+                    "text": "caster_rig",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "plate.n.02",
+                        "text": "mounting_plate",
+                        "gloss": "a sheet of metal or wood or glass or plastic"
+                      }
+                    ],
+                    "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                  },
+                  {
+                    "wn30synsetkey": "wheel.n.01",
+                    "text": "wheel",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "spoke.n.01",
+                        "text": "spoke",
+                        "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                      },
+                      {
+                        "wn30synsetkey": "hub.n.01",
+                        "text": "hub",
+                        "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                      },
+                      {
+                        "wn30synsetkey": "hubcap.n.01",
+                        "text": "hubcap",
+                        "gloss": "cap that fits over the hub of a wheel"
+                      },
+                      {
+                        "wn30synsetkey": "rim.n.03",
+                        "text": "rim",
+                        "gloss": "the outer part of a wheel to which the tire is attached"
+                      }
+                    ],
+                    "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                  },
+                  {
+                    "wn30synsetkey": "brake.n.01",
+                    "text": "brake",
+                    "gloss": "a restraint used to slow or stop a vehicle"
+                  }
+                ],
+                "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+              }
+            ],
+            "gloss": "one of the supports for a piece of furniture"
+          },
+          {
+            "wn30synsetkey": "rocker.n.07",
+            "text": "rocker",
+            "gloss": "a curved support that permits the supported object to rock to and fro"
+          }
+        ],
+        "gloss": "undefined"
+      },
+      {
+        "wn30synsetkey": "back.n.08",
+        "text": "chair_back",
+        "nodes": [
+          {
+            "wn30synsetkey": "spindle.n.02",
+            "text": "spindle",
+            "gloss": "A cylindrically symmetric shaft, usually made of wood."
+          },
+          {
+            "wn30synsetkey": "rail.n.04",
+            "text": "rail",
+            "gloss": "horizontal bar (usually of wood or metal)"
+          },
+          {
+            "wn30synsetkey": "splat.n.02",
+            "text": "splat",
+            "gloss": "a slat of wood in the middle of the back of a straight chair"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "stile",
+            "gloss": "outside vertical framing member (of the back)"
+          },
+          {
+            "wn30synsetkey": "headrest.n.02",
+            "text": "headrest",
+            "gloss": "a rest for the head"
+          },
+          {
+            "wn30synsetkey": "cushion.n.03",
+            "text": "cushion",
+            "gloss": "a soft bag filled with air or a mass of padding such as feathers or foam rubber etc."
+          }
+        ],
+        "gloss": "a support that you can lean against while sitting; \"the back of the dental chair was adjustable\""
+      },
+      {
+        "wn30synsetkey": "arm.n.04",
+        "text": "arm",
+        "nodes": [
+          {
+            "wn30synsetkey": "armrest.n.01",
+            "text": "armrest",
+            "gloss": "Part that supports your elbow and forearm"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "arm_support",
+            "gloss": "The upright piece which supports the arm"
+          }
+        ],
+        "gloss": "the part of an armchair or sofa that supports the elbow and forearm of a seated person"
+      }
+    ],
+    "gloss": "a chair mounted on rockers"
+  },
+  {
+    "wn30synsetkey": "recliner.n.01",
+    "text": "recliner",
+    "nodes": [
+      {
+        "wn30synsetkey": "seat.n.04",
+        "text": "seat",
+        "nodes": [
+          {
+            "wn30synsetkey": "undefined",
+            "text": "apron",
+            "gloss": "The strips that run between the legs and connects to the surface (seat)"
+          },
+          {
+            "wn30synsetkey": "cushion.n.03",
+            "text": "cushion",
+            "gloss": "a soft bag filled with air or a mass of padding such as feathers or foam rubber etc."
+          },
+          {
+            "wn30synsetkey": "pillow.n.01",
+            "text": "pillow",
+            "gloss": "a cushion to support the head of a sleeping person"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "seat_surface",
+            "gloss": "undefined"
+          }
+        ],
+        "gloss": "any support where you can sit (especially the part of a chair or bench etc. on which you sit); \"he dusted off the seat before sitting down\""
+      },
+      {
+        "wn30synsetkey": "undefined",
+        "text": "leg_base",
+        "nodes": [
+          {
+            "wn30synsetkey": "undefined",
+            "text": "stretcher",
+            "gloss": "horizontal support element joining the legs"
+          },
+          {
+            "wn30synsetkey": "leg.n.03",
+            "text": "furniture_leg",
+            "nodes": [
+              {
+                "wn30synsetkey": "foot.n.11",
+                "text": "furniture_foot",
+                "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+              },
+              {
+                "wn30synsetkey": "caster.n.03",
+                "text": "caster",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "undefined",
+                    "text": "caster_rig",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "plate.n.02",
+                        "text": "mounting_plate",
+                        "gloss": "a sheet of metal or wood or glass or plastic"
+                      }
+                    ],
+                    "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                  },
+                  {
+                    "wn30synsetkey": "wheel.n.01",
+                    "text": "wheel",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "spoke.n.01",
+                        "text": "spoke",
+                        "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                      },
+                      {
+                        "wn30synsetkey": "hub.n.01",
+                        "text": "hub",
+                        "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                      },
+                      {
+                        "wn30synsetkey": "hubcap.n.01",
+                        "text": "hubcap",
+                        "gloss": "cap that fits over the hub of a wheel"
+                      },
+                      {
+                        "wn30synsetkey": "rim.n.03",
+                        "text": "rim",
+                        "gloss": "the outer part of a wheel to which the tire is attached"
+                      }
+                    ],
+                    "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                  },
+                  {
+                    "wn30synsetkey": "brake.n.01",
+                    "text": "brake",
+                    "gloss": "a restraint used to slow or stop a vehicle"
+                  }
+                ],
+                "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+              }
+            ],
+            "gloss": "one of the supports for a piece of furniture"
+          }
+        ],
+        "gloss": "undefined"
+      },
+      {
+        "wn30synsetkey": "back.n.08",
+        "text": "chair_back",
+        "nodes": [
+          {
+            "wn30synsetkey": "spindle.n.02",
+            "text": "spindle",
+            "gloss": "A cylindrically symmetric shaft, usually made of wood."
+          },
+          {
+            "wn30synsetkey": "rail.n.04",
+            "text": "rail",
+            "gloss": "horizontal bar (usually of wood or metal)"
+          },
+          {
+            "wn30synsetkey": "splat.n.02",
+            "text": "splat",
+            "gloss": "a slat of wood in the middle of the back of a straight chair"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "stile",
+            "gloss": "outside vertical framing member (of the back)"
+          },
+          {
+            "wn30synsetkey": "headrest.n.02",
+            "text": "headrest",
+            "gloss": "a rest for the head"
+          },
+          {
+            "wn30synsetkey": "cushion.n.03",
+            "text": "cushion",
+            "gloss": "a soft bag filled with air or a mass of padding such as feathers or foam rubber etc."
+          }
+        ],
+        "gloss": "a support that you can lean against while sitting; \"the back of the dental chair was adjustable\""
+      },
+      {
+        "wn30synsetkey": "arm.n.04",
+        "text": "arm",
+        "nodes": [
+          {
+            "wn30synsetkey": "armrest.n.01",
+            "text": "armrest",
+            "gloss": "Part that supports your elbow and forearm"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "arm_support",
+            "gloss": "The upright piece which supports the arm"
+          }
+        ],
+        "gloss": "the part of an armchair or sofa that supports the elbow and forearm of a seated person"
+      }
+    ],
+    "gloss": "an armchair whose back can be lowered and foot can be raised to allow the sitter to recline in it"
+  },
+  {
+    "wn30synsetkey": "tablet-armed_chair.n.01",
+    "text": "tablet-armed chair",
+    "nodes": [
+      {
+        "wn30synsetkey": "seat.n.04",
+        "text": "seat",
+        "nodes": [
+          {
+            "wn30synsetkey": "undefined",
+            "text": "apron",
+            "gloss": "The strips that run between the legs and connects to the surface (seat)"
+          },
+          {
+            "wn30synsetkey": "cushion.n.03",
+            "text": "cushion",
+            "gloss": "a soft bag filled with air or a mass of padding such as feathers or foam rubber etc."
+          },
+          {
+            "wn30synsetkey": "pillow.n.01",
+            "text": "pillow",
+            "gloss": "a cushion to support the head of a sleeping person"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "seat_surface",
+            "gloss": "undefined"
+          }
+        ],
+        "gloss": "any support where you can sit (especially the part of a chair or bench etc. on which you sit); \"he dusted off the seat before sitting down\""
+      },
+      {
+        "wn30synsetkey": "undefined",
+        "text": "leg_base",
+        "nodes": [
+          {
+            "wn30synsetkey": "undefined",
+            "text": "stretcher",
+            "gloss": "horizontal support element joining the legs"
+          },
+          {
+            "wn30synsetkey": "leg.n.03",
+            "text": "furniture_leg",
+            "nodes": [
+              {
+                "wn30synsetkey": "foot.n.11",
+                "text": "furniture_foot",
+                "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+              },
+              {
+                "wn30synsetkey": "caster.n.03",
+                "text": "caster",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "undefined",
+                    "text": "caster_rig",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "plate.n.02",
+                        "text": "mounting_plate",
+                        "gloss": "a sheet of metal or wood or glass or plastic"
+                      }
+                    ],
+                    "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                  },
+                  {
+                    "wn30synsetkey": "wheel.n.01",
+                    "text": "wheel",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "spoke.n.01",
+                        "text": "spoke",
+                        "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                      },
+                      {
+                        "wn30synsetkey": "hub.n.01",
+                        "text": "hub",
+                        "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                      },
+                      {
+                        "wn30synsetkey": "hubcap.n.01",
+                        "text": "hubcap",
+                        "gloss": "cap that fits over the hub of a wheel"
+                      },
+                      {
+                        "wn30synsetkey": "rim.n.03",
+                        "text": "rim",
+                        "gloss": "the outer part of a wheel to which the tire is attached"
+                      }
+                    ],
+                    "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                  },
+                  {
+                    "wn30synsetkey": "brake.n.01",
+                    "text": "brake",
+                    "gloss": "a restraint used to slow or stop a vehicle"
+                  }
+                ],
+                "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+              }
+            ],
+            "gloss": "one of the supports for a piece of furniture"
+          }
+        ],
+        "gloss": "undefined"
+      },
+      {
+        "wn30synsetkey": "back.n.08",
+        "text": "chair_back",
+        "nodes": [
+          {
+            "wn30synsetkey": "spindle.n.02",
+            "text": "spindle",
+            "gloss": "A cylindrically symmetric shaft, usually made of wood."
+          },
+          {
+            "wn30synsetkey": "rail.n.04",
+            "text": "rail",
+            "gloss": "horizontal bar (usually of wood or metal)"
+          },
+          {
+            "wn30synsetkey": "splat.n.02",
+            "text": "splat",
+            "gloss": "a slat of wood in the middle of the back of a straight chair"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "stile",
+            "gloss": "outside vertical framing member (of the back)"
+          },
+          {
+            "wn30synsetkey": "headrest.n.02",
+            "text": "headrest",
+            "gloss": "a rest for the head"
+          },
+          {
+            "wn30synsetkey": "cushion.n.03",
+            "text": "cushion",
+            "gloss": "a soft bag filled with air or a mass of padding such as feathers or foam rubber etc."
+          }
+        ],
+        "gloss": "a support that you can lean against while sitting; \"the back of the dental chair was adjustable\""
+      },
+      {
+        "wn30synsetkey": "arm.n.04",
+        "text": "arm",
+        "nodes": [
+          {
+            "wn30synsetkey": "armrest.n.01",
+            "text": "armrest",
+            "gloss": "Part that supports your elbow and forearm"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "arm_support",
+            "gloss": "The upright piece which supports the arm"
+          }
+        ],
+        "gloss": "the part of an armchair or sofa that supports the elbow and forearm of a seated person"
+      },
+      {
+        "wn30synsetkey": "writing_arm.n.01",
+        "text": "writing_arm",
+        "gloss": "an arm of a tablet-armed chair; widened to provide a writing surface"
+      }
+    ],
+    "gloss": "a chair with an arm that has been widened for writing"
+  },
+  {
+    "wn30synsetkey": "easy_chair.n.01",
+    "text": "sofa chair",
+    "nodes": [
+      {
+        "wn30synsetkey": "seat.n.04",
+        "text": "seat",
+        "nodes": [
+          {
+            "wn30synsetkey": "undefined",
+            "text": "apron",
+            "gloss": "The strips that run between the legs and connects to the surface (seat)"
+          },
+          {
+            "wn30synsetkey": "cushion.n.03",
+            "text": "cushion",
+            "gloss": "a soft bag filled with air or a mass of padding such as feathers or foam rubber etc."
+          },
+          {
+            "wn30synsetkey": "pillow.n.01",
+            "text": "pillow",
+            "gloss": "a cushion to support the head of a sleeping person"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "seat_surface",
+            "gloss": "undefined"
+          }
+        ],
+        "gloss": "any support where you can sit (especially the part of a chair or bench etc. on which you sit); \"he dusted off the seat before sitting down\""
+      },
+      {
+        "wn30synsetkey": "base.n.08",
+        "text": "chair_base",
+        "nodes": [
+          {
+            "wn30synsetkey": "undefined",
+            "text": "swivel_base",
+            "nodes": [
+              {
+                "text": "footrest_ring"
+              },
+              {
+                "wn30synsetkey": "undefined",
+                "text": "gas_lift_cylinder",
+                "gloss": "mechanical devices which use the power of compressed gas to produce a force in a reciprocating linear motion."
+              },
+              {
+                "wn30synsetkey": "undefined",
+                "text": "tilt_control_and_gas_lift_mechanism",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "lever.n.01",
+                    "text": "lever",
+                    "gloss": "a rigid bar pivoted about a fulcrum"
+                  },
+                  {
+                    "wn30synsetkey": "plate.n.02",
+                    "text": "mounting_plate",
+                    "gloss": "a sheet of metal or wood or glass or plastic"
+                  },
+                  {
+                    "wn30synsetkey": "knob.n.02",
+                    "text": "knob",
+                    "gloss": "a round handle"
+                  }
+                ],
+                "gloss": "The gas lift mechanism allows the user to adjust the chair to the preferred, ergonomically correct position."
+              },
+              {
+                "wn30synsetkey": "swivel.n.01",
+                "text": "swivel",
+                "gloss": "a coupling (as in a chain) that has one end that turns on a headed pin"
+              },
+              {
+                "wn30synsetkey": "undefined",
+                "text": "star_swivel_base",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "leg.n.03",
+                    "text": "furniture_leg",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "foot.n.11",
+                        "text": "furniture_foot",
+                        "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+                      },
+                      {
+                        "wn30synsetkey": "caster.n.03",
+                        "text": "caster",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "undefined",
+                            "text": "caster_rig",
+                            "nodes": [
+                              {
+                                "wn30synsetkey": "plate.n.02",
+                                "text": "mounting_plate",
+                                "gloss": "a sheet of metal or wood or glass or plastic"
+                              }
+                            ],
+                            "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                          },
+                          {
+                            "wn30synsetkey": "wheel.n.01",
+                            "text": "wheel",
+                            "nodes": [
+                              {
+                                "wn30synsetkey": "spoke.n.01",
+                                "text": "spoke",
+                                "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                              },
+                              {
+                                "wn30synsetkey": "hub.n.01",
+                                "text": "hub",
+                                "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                              },
+                              {
+                                "wn30synsetkey": "hubcap.n.01",
+                                "text": "hubcap",
+                                "gloss": "cap that fits over the hub of a wheel"
+                              },
+                              {
+                                "wn30synsetkey": "rim.n.03",
+                                "text": "rim",
+                                "gloss": "the outer part of a wheel to which the tire is attached"
+                              }
+                            ],
+                            "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                          },
+                          {
+                            "wn30synsetkey": "brake.n.01",
+                            "text": "brake",
+                            "gloss": "a restraint used to slow or stop a vehicle"
+                          }
+                        ],
+                        "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+                      }
+                    ],
+                    "gloss": "one of the supports for a piece of furniture"
+                  }
+                ],
+                "gloss": "swivel base with a star shape"
+              }
+            ],
+            "gloss": "undefined"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "leg_base",
+            "nodes": [
+              {
+                "wn30synsetkey": "undefined",
+                "text": "stretcher",
+                "gloss": "horizontal support element joining the legs"
+              },
+              {
+                "wn30synsetkey": "leg.n.03",
+                "text": "furniture_leg",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "foot.n.11",
+                    "text": "furniture_foot",
+                    "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+                  },
+                  {
+                    "wn30synsetkey": "caster.n.03",
+                    "text": "caster",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "undefined",
+                        "text": "caster_rig",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "plate.n.02",
+                            "text": "mounting_plate",
+                            "gloss": "a sheet of metal or wood or glass or plastic"
+                          }
+                        ],
+                        "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                      },
+                      {
+                        "wn30synsetkey": "wheel.n.01",
+                        "text": "wheel",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "spoke.n.01",
+                            "text": "spoke",
+                            "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                          },
+                          {
+                            "wn30synsetkey": "hub.n.01",
+                            "text": "hub",
+                            "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                          },
+                          {
+                            "wn30synsetkey": "hubcap.n.01",
+                            "text": "hubcap",
+                            "gloss": "cap that fits over the hub of a wheel"
+                          },
+                          {
+                            "wn30synsetkey": "rim.n.03",
+                            "text": "rim",
+                            "gloss": "the outer part of a wheel to which the tire is attached"
+                          }
+                        ],
+                        "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                      },
+                      {
+                        "wn30synsetkey": "brake.n.01",
+                        "text": "brake",
+                        "gloss": "a restraint used to slow or stop a vehicle"
+                      }
+                    ],
+                    "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+                  }
+                ],
+                "gloss": "one of the supports for a piece of furniture"
+              }
+            ],
+            "gloss": "undefined"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "rocker_base",
+            "nodes": [
+              {
+                "wn30synsetkey": "undefined",
+                "text": "stretcher",
+                "gloss": "horizontal support element joining the legs"
+              },
+              {
+                "wn30synsetkey": "leg.n.03",
+                "text": "furniture_leg",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "foot.n.11",
+                    "text": "furniture_foot",
+                    "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+                  },
+                  {
+                    "wn30synsetkey": "caster.n.03",
+                    "text": "caster",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "undefined",
+                        "text": "caster_rig",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "plate.n.02",
+                            "text": "mounting_plate",
+                            "gloss": "a sheet of metal or wood or glass or plastic"
+                          }
+                        ],
+                        "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                      },
+                      {
+                        "wn30synsetkey": "wheel.n.01",
+                        "text": "wheel",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "spoke.n.01",
+                            "text": "spoke",
+                            "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                          },
+                          {
+                            "wn30synsetkey": "hub.n.01",
+                            "text": "hub",
+                            "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                          },
+                          {
+                            "wn30synsetkey": "hubcap.n.01",
+                            "text": "hubcap",
+                            "gloss": "cap that fits over the hub of a wheel"
+                          },
+                          {
+                            "wn30synsetkey": "rim.n.03",
+                            "text": "rim",
+                            "gloss": "the outer part of a wheel to which the tire is attached"
+                          }
+                        ],
+                        "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                      },
+                      {
+                        "wn30synsetkey": "brake.n.01",
+                        "text": "brake",
+                        "gloss": "a restraint used to slow or stop a vehicle"
+                      }
+                    ],
+                    "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+                  }
+                ],
+                "gloss": "one of the supports for a piece of furniture"
+              },
+              {
+                "wn30synsetkey": "rocker.n.07",
+                "text": "rocker",
+                "gloss": "a curved support that permits the supported object to rock to and fro"
+              }
+            ],
+            "gloss": "undefined"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "pedestal_base",
+            "nodes": [
+              {
+                "wn30synsetkey": "leg.n.03",
+                "text": "furniture_leg",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "foot.n.11",
+                    "text": "furniture_foot",
+                    "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+                  },
+                  {
+                    "wn30synsetkey": "caster.n.03",
+                    "text": "caster",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "undefined",
+                        "text": "caster_rig",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "plate.n.02",
+                            "text": "mounting_plate",
+                            "gloss": "a sheet of metal or wood or glass or plastic"
+                          }
+                        ],
+                        "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                      },
+                      {
+                        "wn30synsetkey": "wheel.n.01",
+                        "text": "wheel",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "spoke.n.01",
+                            "text": "spoke",
+                            "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                          },
+                          {
+                            "wn30synsetkey": "hub.n.01",
+                            "text": "hub",
+                            "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                          },
+                          {
+                            "wn30synsetkey": "hubcap.n.01",
+                            "text": "hubcap",
+                            "gloss": "cap that fits over the hub of a wheel"
+                          },
+                          {
+                            "wn30synsetkey": "rim.n.03",
+                            "text": "rim",
+                            "gloss": "the outer part of a wheel to which the tire is attached"
+                          }
+                        ],
+                        "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                      },
+                      {
+                        "wn30synsetkey": "brake.n.01",
+                        "text": "brake",
+                        "gloss": "a restraint used to slow or stop a vehicle"
+                      }
+                    ],
+                    "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+                  }
+                ],
+                "gloss": "one of the supports for a piece of furniture"
+              },
+              {
+                "wn30synsetkey": "pedestal.n.03",
+                "text": "pedestal",
+                "gloss": "an architectural support or base (as for a column or statue)"
+              },
+              {
+                "wn30synsetkey": "undefined",
+                "text": "plinth",
+                "gloss": "the lower square slab at the base of a pedestal"
+              }
+            ],
+            "gloss": "undefined"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "caster_base",
+            "nodes": [
+              {
+                "wn30synsetkey": "caster.n.03",
+                "text": "caster",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "undefined",
+                    "text": "caster_rig",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "plate.n.02",
+                        "text": "mounting_plate",
+                        "gloss": "a sheet of metal or wood or glass or plastic"
+                      }
+                    ],
+                    "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                  },
+                  {
+                    "wn30synsetkey": "wheel.n.01",
+                    "text": "wheel",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "spoke.n.01",
+                        "text": "spoke",
+                        "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                      },
+                      {
+                        "wn30synsetkey": "hub.n.01",
+                        "text": "hub",
+                        "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                      },
+                      {
+                        "wn30synsetkey": "hubcap.n.01",
+                        "text": "hubcap",
+                        "gloss": "cap that fits over the hub of a wheel"
+                      },
+                      {
+                        "wn30synsetkey": "rim.n.03",
+                        "text": "rim",
+                        "gloss": "the outer part of a wheel to which the tire is attached"
+                      }
+                    ],
+                    "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                  },
+                  {
+                    "wn30synsetkey": "brake.n.01",
+                    "text": "brake",
+                    "gloss": "a restraint used to slow or stop a vehicle"
+                  }
+                ],
+                "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+              }
+            ],
+            "gloss": "undefined"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "foot_base",
+            "nodes": [
+              {
+                "wn30synsetkey": "foot.n.11",
+                "text": "furniture_foot",
+                "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+              }
+            ],
+            "gloss": "undefined"
+          }
+        ],
+        "gloss": "a support or foundation; \"the base of the lamp\""
+      },
+      {
+        "wn30synsetkey": "back.n.08",
+        "text": "chair_back",
+        "nodes": [
+          {
+            "wn30synsetkey": "spindle.n.02",
+            "text": "spindle",
+            "gloss": "A cylindrically symmetric shaft, usually made of wood."
+          },
+          {
+            "wn30synsetkey": "rail.n.04",
+            "text": "rail",
+            "gloss": "horizontal bar (usually of wood or metal)"
+          },
+          {
+            "wn30synsetkey": "splat.n.02",
+            "text": "splat",
+            "gloss": "a slat of wood in the middle of the back of a straight chair"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "stile",
+            "gloss": "outside vertical framing member (of the back)"
+          },
+          {
+            "wn30synsetkey": "headrest.n.02",
+            "text": "headrest",
+            "gloss": "a rest for the head"
+          },
+          {
+            "wn30synsetkey": "cushion.n.03",
+            "text": "cushion",
+            "gloss": "a soft bag filled with air or a mass of padding such as feathers or foam rubber etc."
+          }
+        ],
+        "gloss": "a support that you can lean against while sitting; \"the back of the dental chair was adjustable\""
+      },
+      {
+        "wn30synsetkey": "arm.n.04",
+        "text": "arm",
+        "nodes": [
+          {
+            "wn30synsetkey": "armrest.n.01",
+            "text": "armrest",
+            "gloss": "Part that supports your elbow and forearm"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "arm_support",
+            "gloss": "The upright piece which supports the arm"
+          }
+        ],
+        "gloss": "the part of an armchair or sofa that supports the elbow and forearm of a seated person"
+      }
+    ],
+    "gloss": "a comfortable upholstered armchair"
+  },
+  {
+    "wn30synsetkey": "sofa.n.01",
+    "text": "sofa",
+    "nodes": [
+      {
+        "wn30synsetkey": "seat.n.04",
+        "text": "seat",
+        "nodes": [
+          {
+            "wn30synsetkey": "undefined",
+            "text": "apron",
+            "gloss": "The strips that run between the legs and connects to the surface (seat)"
+          },
+          {
+            "wn30synsetkey": "cushion.n.03",
+            "text": "cushion",
+            "gloss": "a soft bag filled with air or a mass of padding such as feathers or foam rubber etc."
+          },
+          {
+            "wn30synsetkey": "pillow.n.01",
+            "text": "pillow",
+            "gloss": "a cushion to support the head of a sleeping person"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "seat_surface",
+            "gloss": "undefined"
+          }
+        ],
+        "gloss": "any support where you can sit (especially the part of a chair or bench etc. on which you sit); \"he dusted off the seat before sitting down\""
+      },
+      {
+        "wn30synsetkey": "undefined",
+        "text": "leg_or_foot_or_caster_base",
+        "nodes": [
+          {
+            "wn30synsetkey": "undefined",
+            "text": "leg_base",
+            "nodes": [
+              {
+                "wn30synsetkey": "undefined",
+                "text": "stretcher",
+                "gloss": "horizontal support element joining the legs"
+              },
+              {
+                "wn30synsetkey": "leg.n.03",
+                "text": "furniture_leg",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "foot.n.11",
+                    "text": "furniture_foot",
+                    "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+                  },
+                  {
+                    "wn30synsetkey": "caster.n.03",
+                    "text": "caster",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "undefined",
+                        "text": "caster_rig",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "plate.n.02",
+                            "text": "mounting_plate",
+                            "gloss": "a sheet of metal or wood or glass or plastic"
+                          }
+                        ],
+                        "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                      },
+                      {
+                        "wn30synsetkey": "wheel.n.01",
+                        "text": "wheel",
+                        "nodes": [
+                          {
+                            "wn30synsetkey": "spoke.n.01",
+                            "text": "spoke",
+                            "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                          },
+                          {
+                            "wn30synsetkey": "hub.n.01",
+                            "text": "hub",
+                            "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                          },
+                          {
+                            "wn30synsetkey": "hubcap.n.01",
+                            "text": "hubcap",
+                            "gloss": "cap that fits over the hub of a wheel"
+                          },
+                          {
+                            "wn30synsetkey": "rim.n.03",
+                            "text": "rim",
+                            "gloss": "the outer part of a wheel to which the tire is attached"
+                          }
+                        ],
+                        "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                      },
+                      {
+                        "wn30synsetkey": "brake.n.01",
+                        "text": "brake",
+                        "gloss": "a restraint used to slow or stop a vehicle"
+                      }
+                    ],
+                    "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+                  }
+                ],
+                "gloss": "one of the supports for a piece of furniture"
+              }
+            ],
+            "gloss": "undefined"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "foot_base",
+            "nodes": [
+              {
+                "wn30synsetkey": "foot.n.11",
+                "text": "furniture_foot",
+                "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+              }
+            ],
+            "gloss": "undefined"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "caster_base",
+            "nodes": [
+              {
+                "wn30synsetkey": "caster.n.03",
+                "text": "caster",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "undefined",
+                    "text": "caster_rig",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "plate.n.02",
+                        "text": "mounting_plate",
+                        "gloss": "a sheet of metal or wood or glass or plastic"
+                      }
+                    ],
+                    "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                  },
+                  {
+                    "wn30synsetkey": "wheel.n.01",
+                    "text": "wheel",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "spoke.n.01",
+                        "text": "spoke",
+                        "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                      },
+                      {
+                        "wn30synsetkey": "hub.n.01",
+                        "text": "hub",
+                        "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                      },
+                      {
+                        "wn30synsetkey": "hubcap.n.01",
+                        "text": "hubcap",
+                        "gloss": "cap that fits over the hub of a wheel"
+                      },
+                      {
+                        "wn30synsetkey": "rim.n.03",
+                        "text": "rim",
+                        "gloss": "the outer part of a wheel to which the tire is attached"
+                      }
+                    ],
+                    "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                  },
+                  {
+                    "wn30synsetkey": "brake.n.01",
+                    "text": "brake",
+                    "gloss": "a restraint used to slow or stop a vehicle"
+                  }
+                ],
+                "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+              }
+            ],
+            "gloss": "undefined"
+          }
+        ],
+        "gloss": "undefined"
+      },
+      {
+        "wn30synsetkey": "back.n.08",
+        "text": "chair_back",
+        "nodes": [
+          {
+            "wn30synsetkey": "spindle.n.02",
+            "text": "spindle",
+            "gloss": "A cylindrically symmetric shaft, usually made of wood."
+          },
+          {
+            "wn30synsetkey": "rail.n.04",
+            "text": "rail",
+            "gloss": "horizontal bar (usually of wood or metal)"
+          },
+          {
+            "wn30synsetkey": "splat.n.02",
+            "text": "splat",
+            "gloss": "a slat of wood in the middle of the back of a straight chair"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "stile",
+            "gloss": "outside vertical framing member (of the back)"
+          },
+          {
+            "wn30synsetkey": "headrest.n.02",
+            "text": "headrest",
+            "gloss": "a rest for the head"
+          },
+          {
+            "wn30synsetkey": "cushion.n.03",
+            "text": "cushion",
+            "gloss": "a soft bag filled with air or a mass of padding such as feathers or foam rubber etc."
+          }
+        ],
+        "gloss": "a support that you can lean against while sitting; \"the back of the dental chair was adjustable\""
+      },
+      {
+        "wn30synsetkey": "arm.n.04",
+        "text": "arm",
+        "nodes": [
+          {
+            "wn30synsetkey": "armrest.n.01",
+            "text": "armrest",
+            "gloss": "Part that supports your elbow and forearm"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "arm_support",
+            "gloss": "The upright piece which supports the arm"
+          }
+        ],
+        "gloss": "the part of an armchair or sofa that supports the elbow and forearm of a seated person"
+      }
+    ],
+    "gloss": "an upholstered seat for more than one person"
+  },
+  {
+    "wn30synsetkey": "bench.n.01",
+    "text": "bench",
+    "nodes": [
+      {
+        "wn30synsetkey": "seat.n.04",
+        "text": "seat",
+        "nodes": [
+          {
+            "wn30synsetkey": "undefined",
+            "text": "apron",
+            "gloss": "The strips that run between the legs and connects to the surface (seat)"
+          },
+          {
+            "wn30synsetkey": "cushion.n.03",
+            "text": "cushion",
+            "gloss": "a soft bag filled with air or a mass of padding such as feathers or foam rubber etc."
+          },
+          {
+            "wn30synsetkey": "pillow.n.01",
+            "text": "pillow",
+            "gloss": "a cushion to support the head of a sleeping person"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "seat_surface",
+            "gloss": "undefined"
+          }
+        ],
+        "gloss": "any support where you can sit (especially the part of a chair or bench etc. on which you sit); \"he dusted off the seat before sitting down\""
+      },
+      {
+        "wn30synsetkey": "undefined",
+        "text": "leg_base",
+        "nodes": [
+          {
+            "wn30synsetkey": "undefined",
+            "text": "stretcher",
+            "gloss": "horizontal support element joining the legs"
+          },
+          {
+            "wn30synsetkey": "leg.n.03",
+            "text": "furniture_leg",
+            "nodes": [
+              {
+                "wn30synsetkey": "foot.n.11",
+                "text": "furniture_foot",
+                "gloss": "a support resembling a pedal extremity; \"one foot of the chair was on the carpet\""
+              },
+              {
+                "wn30synsetkey": "caster.n.03",
+                "text": "caster",
+                "nodes": [
+                  {
+                    "wn30synsetkey": "undefined",
+                    "text": "caster_rig",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "plate.n.02",
+                        "text": "mounting_plate",
+                        "gloss": "a sheet of metal or wood or glass or plastic"
+                      }
+                    ],
+                    "gloss": "All of the pieces of a caster minus the wheel. Example: top plate, ball bearings, upper race, lower race, fork legs, rivet/kingpin, lock nut, axle."
+                  },
+                  {
+                    "wn30synsetkey": "wheel.n.01",
+                    "text": "wheel",
+                    "nodes": [
+                      {
+                        "wn30synsetkey": "spoke.n.01",
+                        "text": "spoke",
+                        "gloss": "support consisting of a radial member of a wheel joining the hub to the rim"
+                      },
+                      {
+                        "wn30synsetkey": "hub.n.01",
+                        "text": "hub",
+                        "gloss": "the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes"
+                      },
+                      {
+                        "wn30synsetkey": "hubcap.n.01",
+                        "text": "hubcap",
+                        "gloss": "cap that fits over the hub of a wheel"
+                      },
+                      {
+                        "wn30synsetkey": "rim.n.03",
+                        "text": "rim",
+                        "gloss": "the outer part of a wheel to which the tire is attached"
+                      }
+                    ],
+                    "gloss": "a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)"
+                  },
+                  {
+                    "wn30synsetkey": "brake.n.01",
+                    "text": "brake",
+                    "gloss": "a restraint used to slow or stop a vehicle"
+                  }
+                ],
+                "gloss": "a pivoting roller attached to the bottom of furniture or trucks or portable machines to make them movable"
+              }
+            ],
+            "gloss": "one of the supports for a piece of furniture"
+          }
+        ],
+        "gloss": "undefined"
+      },
+      {
+        "wn30synsetkey": "arm.n.04",
+        "text": "arm",
+        "nodes": [
+          {
+            "wn30synsetkey": "armrest.n.01",
+            "text": "armrest",
+            "gloss": "Part that supports your elbow and forearm"
+          },
+          {
+            "wn30synsetkey": "undefined",
+            "text": "arm_support",
+            "gloss": "The upright piece which supports the arm"
+          }
+        ],
+        "gloss": "the part of an armchair or sofa that supports the elbow and forearm of a seated person"
+      }
+    ],
+    "gloss": "a long seat for more than one person"
+  }
+]

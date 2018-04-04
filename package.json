@@ -14,8 +14,14 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "element-ui": "^2.2.2",
+    "jquery": "^3.3.1",
+    "obj-mtl-loader": "0.0.5",
+    "qs": "^6.5.1",
+    "require.js": "^1.0.0",
     "three": "^0.91.0",
+    "three-orbit-controls": "^82.1.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },

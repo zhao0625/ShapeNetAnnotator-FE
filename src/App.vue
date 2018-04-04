@@ -1,38 +1,36 @@
 <template>
   <div id="app">
-    <!--<img src="./assets/logo.png">-->
-    <!-- TODO 公共菜单-->
+    <!-- TODO Shared Menu -->
+    <!--:default-active="activeIndex2"
+      @select="handleSelect"-->
     <el-menu
-      :default-active="activeIndex2"
       class="el-menu-demo"
       mode="horizontal"
-      @select="handleSelect"
       background-color="#545c64"
       text-color="#fff"
       active-text-color="#ffd04b"
-      style="margin: 15px"
+      style="margin: 1px"
+      :default-active="'3'"
     >
-      <el-menu-item index="1">System 首页</el-menu-item>
-      <el-submenu index="2">
-        <template slot="title">我的工作台</template>
-        <el-menu-item index="2-1">选项1</el-menu-item>
-        <el-menu-item index="2-2">选项2</el-menu-item>
-        <el-menu-item index="2-3">选项3</el-menu-item>
-        <el-submenu index="2-4">
-          <template slot="title">选项4</template>
-          <el-menu-item index="2-4-1">选项1</el-menu-item>
-          <el-menu-item index="2-4-2">选项2</el-menu-item>
-          <el-menu-item index="2-4-3">选项3</el-menu-item>
-        </el-submenu>
-      </el-submenu>
-      <el-menu-item index="3" disabled>消息中心</el-menu-item>
-      <el-menu-item index="4"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
+      <el-menu-item index="1">System: User Login</el-menu-item>
+      <el-menu-item index="2">System: Annotation List</el-menu-item>
+      <el-menu-item index="3" :disabled="false">Part Hierarchy Annotator</el-menu-item>
+      <el-menu-item index="4">Instruction Video</el-menu-item>
+      <!--<el-submenu index="2">-->
+        <!--<template slot="title">我的工作台</template>-->
+        <!--<el-menu-item index="2-1">选项1</el-menu-item>-->
+        <!--<el-menu-item index="2-2">选项2</el-menu-item>-->
+        <!--<el-menu-item index="2-3">选项3</el-menu-item>-->
+        <!--<el-submenu index="2-4">-->
+          <!--<template slot="title">选项4</template>-->
+          <!--<el-menu-item index="2-4-1">选项1</el-menu-item>-->
+          <!--<el-menu-item index="2-4-2">选项2</el-menu-item>-->
+          <!--<el-menu-item index="2-4-3">选项3</el-menu-item>-->
+        <!--</el-submenu>-->
+      <!--</el-submenu>-->
     </el-menu>
-    <!-- TODO router-view 渲染入口 (default) -->
+    <!-- TODO router-view: render entrance (default) -->
     <router-view/>
-    <!-- TODO 测试 自定义组件 另一种方式 （固定）-->
-    <!--<test-annotator-page1-main1></test-annotator-page1-main1>-->
-    <!--<TestAnnotatorPage1Main1></TestAnnotatorPage1Main1>-->
   </div>
 </template>
 
@@ -53,8 +51,8 @@ export default {
   text-align: center;
   /*color: #2c3e50;*/
   /*margin-top: 60px;*/
-  /* TODO 整体最外层 margin */
-  margin: 10px;
+  /* TODO system margin */
+  margin: 1px;
   /*margin-bottom: 15px;*/
 }
 
@@ -72,18 +70,18 @@ export default {
 /*!*margin-bottom: 5px;*!*/
 /*}*/
 
-.side-menu {
+/*.side-menu {*/
   /*background-color: white;*/
-  margin-top: 30px;
-}
+  /*margin-top: 30px;*/
+/*}*/
 
-.el-row {
-  margin-bottom: 20px;
-}
+/*.el-row {*/
+  /*margin-bottom: 20px;*/
+/*}*/
 
-.el-col {
-  border-radius: 4px;
-}
+/*.el-col {*/
+  /*border-radius: 4px;*/
+/*}*/
 
 .bg-purple-dark {
   background: #99a9bf;
@@ -102,8 +100,8 @@ export default {
 /*min-height: 16px;*/
 /*}*/
 
-.row-bg {
-  padding: 10px 0;
-  background-color: #f9fafc;
-}
+/*.row-bg {*/
+  /*padding: 10px 0;*/
+  /*background-color: #f9fafc;*/
+/*}*/
 </style>

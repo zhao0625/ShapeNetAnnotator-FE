@@ -1,27 +1,31 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import TestAppMain from '@/components/test-framework/TestAppMain';
-import TestAppMainSingle from '@/components/test-framework-single/TestAppMain';
+import Login from '@/components/Login'
+import MainList from '@/components/MainList';
+import Main from '@/components/Main';
 
 Vue.use(Router);
 
 export default new Router({
   routes: [
+    // TODO main annotator in test
     {
       path: '/',
-      name: 'TestMain',
-      component: TestAppMainSingle
+      name: 'Main',
+      component: Main
     },
+    // Annotation List page
     {
-      path: '/test_app',
-      name: 'TestApp',
-      component: TestAppMain
+      path: '/list',
+      name: 'List',
+      component: MainList
     },
+    // Login page
     {
-      path: '/test_app_single',
-      name: 'TestAppSingle',
-      component: TestAppMainSingle
+      path: '/login_test',
+      name: 'Login',
+      component: Login
     }
   ]
 })
