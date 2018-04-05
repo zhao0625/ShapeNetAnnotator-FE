@@ -370,7 +370,7 @@ export default {
       } else if (event.keyCode === 66 || event.keyCode === 98) {
         // B --> submit cutting result
         if (this.allow_part_cutting) {
-          this.submitPartCuttingResult(); // TODO
+          this.submitPartCuttingResult();
         }
       }
     },
@@ -1266,6 +1266,10 @@ export default {
       }
       return min_vertex;
     },
+    findVertexShortestPathByDj (source, destination) {
+      const graph = new Graph(this.map);
+      return graph.findShortestPath(source.toString(), destination.toString());
+    },
     computeSegmentLength (vertices_path) {
       const geom = this.current_remesh_obj.geometry;
       let total = 0;
@@ -1276,10 +1280,6 @@ export default {
         total += Math.sqrt(Math.pow(x_diff, 2) + Math.pow(y_diff, 2) + Math.pow(z_diff, 2));
       }
       return total;
-    },
-    findVertexShortestPathByDj (source, destination) {
-      const graph = new Graph(this.map);
-      return graph.findShortestPath(source.toString(), destination.toString());
     },
     deleteAllBoundary () {
       const t = this.seg_id_2_boundary_segments.length;
@@ -1315,7 +1315,7 @@ export default {
     selectNextSegment () {
       if (this.current_segment_id !== null) {
         if (this.seg_id_2_boundary_segments[this.current_segment_id].clicked_vertex.length > 0) {
-          this.dehighlightSegment();
+          this.deHighlightSegment();
           ++this.current_segment_id;
           if (this.current_segment_id === this.seg_id_2_boundary_segments.length) {
             this.seg_id_2_boundary_segments.push(this.initSegment());
@@ -1327,7 +1327,7 @@ export default {
     },
     selectPreviousSegment () {
       if (this.current_segment_id !== null && this.current_segment_id > 0) {
-        this.dehighlightSegment();
+        this.deHighlightSegment();
         --this.current_segment_id;
         this.highlightSegment();
       }
@@ -1345,7 +1345,7 @@ export default {
         this.render();
       }
     },
-    dehighlightSegment () {
+    deHighlightSegment () {
       if (this.current_segment_id !== null) {
         const current_segment = this.seg_id_2_boundary_segments[this.current_segment_id];
         for (let point of current_segment.vertex_sphere) {
@@ -1395,7 +1395,7 @@ export default {
     undoRemesh () {
       // TODO
     },
-    submitPartCuttingResult () { // merge: submit & to server // TODO check!
+    submitPartCuttingResult () { // merge: submit & to server
       if (this.num_part_cut === 0) {
         this.$message({
           type: 'warning',
@@ -1448,10 +1448,9 @@ export default {
           },
           data: data
         }).then(response => {
-          console.log('[response!!!!!!]', response);
+          console.log('[ part cutting response ]', response);
           this.loadNewParts();
-        })
-          .catch(error => this.handleAnnotatorError(error));
+        }).catch(error => this.handleAnnotatorError(error));
         // scene
         this.scene.remove(this.current_remesh_obj);
         this.current_remesh_obj = null;
@@ -1462,11 +1461,10 @@ export default {
             child.visible = true;
           }
         });
-        // this.render();
         this.resetRender();
       });
     },
-    loadNewParts () { // TODO check!
+    loadNewParts () {
       const file_path = conf.SERVER_URL_TESTING + conf.get_remesh_cut_json + '/' + this.anno_id + '-' + this.current_remesh_part_id;
       console.log('[ load remesh cut output JSON]: ', file_path);
       Axios.get(file_path, {})
