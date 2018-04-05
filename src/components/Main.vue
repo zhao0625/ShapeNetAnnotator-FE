@@ -119,11 +119,7 @@
                 <!-- removing this template will cause error (undefined) in following v-for -->
                 You finished the annotation! Please submit or review the annotation.<br>
                 <el-button type="success" round style="margin-top: 10px"
-                           @click="() => {this.$notify({
-          title: 'Please wait',
-          message: 'Submitting the results to the server.',
-          type: 'success'
-        });}"
+                           @click="() => {submitFinalResult();}"
                 >
                   Submit the Annotation
                 </el-button>
@@ -768,8 +764,9 @@ export default {
     getSnapshot () {
       this.resetRender();
       try {
-        this.snapshot = this.renderer.domElement.toDataURL('image/jpeg');
-        console.log('[ get snapshot ] got snapshot!');
+        return this.renderer.domElement.toDataURL('image/jpeg');
+        // this.snapshot = this.renderer.domElement.toDataURL('image/jpeg');
+        // console.log('[ get snapshot ] got snapshot!');
       } catch (error) {
         console.log('[ get snapshot ] error:', error);
       }
@@ -1494,6 +1491,88 @@ export default {
         }).catch(error => this.handleAnnotatorError(error));
     },
     // TODO save
+    submitFinalResult () { // TODO (format!)
+      const update_json_data = new FormData();
+      update_json_data.append('Content-Disposition', 'form-data; name="data"');
+      update_json_data.append('Content-Type', 'application/json');
+      update_json_data.append('data', JSON.stringify({anno_id: this.anno_id, anno_version: this.anno_version}));
+      Axios({
+        method: 'post',
+        url: conf.SERVER_URL_TESTING + conf.update_anno_version,
+        headers: {
+          'Content-Type': 'multipart/form-data'
+        },
+        data: update_json_data
+        // save anno info:
+      }).then(response => {
+        console.log('[ updated anno info. ] response: ', response);
+        const out_json_data = new FormData();
+        out_json_data.append('Content-Disposition', 'form-data; name="data"');
+        out_json_data.append('Content-Type', 'application/json');
+        out_json_data.append('data', JSON.stringify({
+          data: JSON.stringify(this.hierarchyTreeAnnotatingRoot), // TODO need to consider the format!
+          anno_id: this.anno_id,
+          anno_version: this.anno_version
+        }));
+        // return for the next 'then'
+        return Axios({
+          method: 'post',
+          url: conf.SERVER_URL_TESTING + conf.save_anno_json,
+          headers: {
+            'Content-Type': 'multipart/form-data'
+          },
+          data: out_json_data
+        });
+        // save anno json:
+      }).then(response => {
+        console.log('[ updated anno json. ] response: ', response);
+        const img_json_data = new FormData();
+        img_json_data.append('Content-Disposition', 'form-data; name="data"');
+        img_json_data.append('Content-Type', 'application/json');
+        img_json_data.append('data', JSON.stringify({
+          img: this.getSnapshot(),
+          anno_id: this.anno_id,
+          anno_version: this.anno_version
+        }));
+        // return for the next 'then'
+        return Axios({
+          method: 'post',
+          url: conf.SERVER_URL_TESTING + conf.save_anno_snapshot,
+          headers: {
+            'Content-Type': 'multipart/form-data'
+          },
+          data: img_json_data
+        });
+        // save current obj list:
+      }).then(response => {
+        console.log('[ updated snapshot. ] response: ', response);
+        const cur_obj_data = new FormData();
+        cur_obj_data.append('Content-Disposition', 'form-data; name="data"');
+        cur_obj_data.append('Content-Type', 'application/json');
+        cur_obj_data.append('data', JSON.stringify({
+          data: JSON.stringify(this.getCurrentSceneObjList()),
+          anno_id: this.anno_id,
+          anno_version: this.anno_version
+        }));
+        // return for the next 'then'
+        return Axios({
+          method: 'post',
+          url: conf.SERVER_URL_TESTING + conf.save_anno_obj_list,
+          headers: {
+            'Content-Type': 'multipart/form-data'
+          },
+          data: cur_obj_data
+        });
+      }).then(response => {
+        console.log('[ saved anno obj list. ] response: ', response);
+      }).catch(error => this.handleAnnotatorError(error));
+
+      this.$notify({
+        title: 'Please wait',
+        message: 'Submitting the results to the server.',
+        type: 'success'
+      });
+    },
     getCurrentSceneObjList () {
       let res = [];
       for (let obj of this.scene.children) {
