@@ -198,17 +198,16 @@
 <script>
 import Axios from 'axios';
 import $ from 'jquery'; // locally import jQuery
-import qs from 'qs';
 import * as THREE from 'three';
 import ObjMtlLoader from 'obj-mtl-loader';
 import threeOrbitControls from 'three-orbit-controls';
+// import qs from 'qs';
 
-// import Graph from '@/assets/'
 const Graph = require('@/assets/library/graph_new');
-// import Graph from '@/assets/library/graph';
+// const request = require('request');
 
-// import backendConfig from '@/assets/backend_config';
 const conf = require('@/assets/backend_config');
+// import backendConfig from '@/assets/backend_config';
 
 // block some eslint rules for this file
 /* eslint-disable camelcase */
@@ -290,16 +289,8 @@ export default {
       hierarchySteps: [],
       currentLevel: 0,
       // TODO Data: Q & A - AND / OR / LEAF
-      requestingRemesh: false,
-      // TODO Data: THREE
-      OrbitControls: threeOrbitControls(THREE), // const OrbitControls = require('three-orbit-controls')(THREE);
-      camera: undefined,
-      scene: new THREE.Scene(),
-      renderer: new THREE.WebGLRenderer({
-        preserveDrawingBuffer: true
-      }),
-      controls: undefined,
-      wireframeSwitch: false
+      requestingRemesh: false
+      // TODO Data: THREE - don't write here
     };
   },
   methods: {
@@ -364,7 +355,7 @@ export default {
       } else if (event.keyCode === 88 || event.keyCode === 120) {
         // X/x --> delete the current boundary (for remeshed part cutting only)
         if (this.allow_part_cutting) {
-          this.deleteBoundary(); // TODO
+          this.deleteBoundary();
         }
       } else if (event.keyCode === 91 || event.keyCode === 123) {
         // [/{ --> select the previous boundary edge (for remeshed part cutting only)
@@ -390,12 +381,17 @@ export default {
         height: window.innerHeight / 2.2,
         ratio: window.innerWidth / window.innerHeight
       };
-      // camera is set in data()
+      // init: THREE.js variables (much overhead if in data())
+      this.scene = new THREE.Scene();
+      this.OrbitControls = threeOrbitControls(THREE); // const OrbitControls = require('three-orbit-controls')(THREE);
+
       this.camera = new THREE.PerspectiveCamera(75, this.sizeSetting.ratio, 0.1, 1000);
       this.camera.position.set(-1, 1, -1);
       this.camera.lookAt(new THREE.Vector3(0, 0, 0));
 
-      // scene and renderer are set in data()
+      this.renderer = new THREE.WebGLRenderer({
+        preserveDrawingBuffer: true
+      });
       this.renderer.setPixelRatio(window.devicePixelRatio);
       this.renderer.setSize(this.sizeSetting.width, this.sizeSetting.height);
       document.getElementById('rendered-div').appendChild(this.renderer.domElement);
@@ -634,6 +630,7 @@ export default {
         file_path += conf.get_new_part + '/' + this.anno_id + '-' + part_id;
       } else if (part_type === 'remesh') {
         file_path += conf.get_remesh_part + '/' + this.anno_id + '-' + part_id;
+        console.log('[ load obj: remesh file ]', file_path);
       } else {
         console.error('[Load OBJ] part type ' + part_type + ' is not valid!');
         return;
@@ -697,8 +694,6 @@ export default {
           this.allow_part_click = false;
           this.allow_part_cutting = true;
           this.allow_select_boundary = true;
-          this.switch_submit_part_cutting = 0;
-          this.current_remesh_obj = mesh;
           // during remeshing: hide all other parts & show only current part
           this.scene.children.forEach(child => {
             if (child.type === 'Mesh' && child.part_type !== 'remesh') {
@@ -708,13 +703,14 @@ export default {
           // other
           mesh.visible = true;
           mesh.center_offset = mesh.geometry.center();
-          // init part segmentation
+          // init part segmentation & compute meta information
+          this.current_remesh_obj = mesh;
           this.num_part_cut = 0;
+          this.part_colors = [];
           this.faceid_2_part_seg_id = [];
           for (let i = 0; i < mesh.geometry.faces.length; ++i) {
             this.faceid_2_part_seg_id[i] = 0;
           }
-          // compute meta information
           this.computeMeshMetaInfo(mesh.geometry);
           // render
           this.renderer.setClearColor(new THREE.Color(this.bg_color_remesh));
@@ -732,10 +728,10 @@ export default {
         this.map[i] = {};
       }
 
-      const get_edge_name = (x, y) => {
+      const get_edge_name = function (x, y) {
         if (x < y) return x + '-' + y; else return y + '-' + x;
       };
-      const get_edge_len = (x, y) => {
+      const get_edge_len = function (x, y) {
         const x_diff = geom.vertices[x].a - geom.vertices[y].a;
         const y_diff = geom.vertices[x].b - geom.vertices[y].b;
         const z_diff = geom.vertices[x].c - geom.vertices[y].c;
@@ -841,6 +837,14 @@ export default {
             if (i === 0) { checkedKeys.push(node['key']); }
             checkedAnnotatingTreeKeys.push(newNode['key']);
           }
+        }
+        if (choseNodes.length === 0) {
+          this.$message({
+            message: 'Please choose at least one parts.',
+            type: 'warning'
+          });
+          this.visitingQueue.unshift(parentPart);
+          return;
         }
         parentPart['nodes'] = choseNodes;
         this.$refs.treeRef.setCheckedKeys(checkedKeys); // check
@@ -1286,7 +1290,7 @@ export default {
       this.current_segment_id = null;
       this.seg_id_2_boundary_segments = [];
     },
-    deleteBoundary () { // remove the current path/segment/boundary // TODO check !
+    deleteBoundary () { // remove the current path/segment/boundary
       // de-render all points
       const current_segment = this.seg_id_2_boundary_segments[this.current_segment_id];
       for (let point of current_segment.vertex_sphere) {
@@ -1430,20 +1434,23 @@ export default {
         cancelButtonText: 'Cancel',
         type: 'info'
       }).then(() => {
-        console.log('testing!!!!'); // TODO
         // send request
         const url = conf.SERVER_URL_TESTING + conf.submit_remesh + '/' + this.anno_id + '-' + this.current_remesh_part_id;
-        Axios.post(url,
-          {
-            data: qs.stringify(this.faceid_2_part_seg_id) // TODO slow?
+        const data = new FormData();
+        data.append('Content-Disposition', 'form-data; name="data"');
+        data.append('Content-Type', 'application/json');
+        data.append('data', JSON.stringify(this.faceid_2_part_seg_id));
+        Axios({
+          method: 'post',
+          url,
+          headers: {
+            'Content-Type': 'multipart/form-data'
           },
-          {
-            headers: {'Content-Type': 'application/x-www-form-urlencoded'} // TODO
-          })
-          .then(response => {
-            console.log('[response!!!!!!]', response);
-            this.loadNewParts();
-          })
+          data: data
+        }).then(response => {
+          console.log('[response!!!!!!]', response);
+          this.loadNewParts();
+        })
           .catch(error => this.handleAnnotatorError(error));
         // scene
         this.scene.remove(this.current_remesh_obj);
@@ -1455,9 +1462,9 @@ export default {
             child.visible = true;
           }
         });
-        this.render();
+        // this.render();
         this.resetRender();
-      }).catch(error => this.handleAnnotatorError(error));
+      });
     },
     loadNewParts () { // TODO check!
       const file_path = conf.SERVER_URL_TESTING + conf.get_remesh_cut_json + '/' + this.anno_id + '-' + this.current_remesh_part_id;
