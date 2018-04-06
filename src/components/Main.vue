@@ -612,14 +612,6 @@ export default {
       this.hierarchySteps = result;
       console.log('[ init progress steps ]', this.hierarchySteps, this.visitingQueue);
     },
-    filterHierarchyNode: function (value, data) {
-      if (!value) return true;
-      return data.text.indexOf(value) !== -1;
-    },
-    filterAnnotatingHierarchyNode: function (value, data) {
-      if (!value) return true;
-      return data.text.indexOf(value) !== -1;
-    },
     // TODO load: obj files
     loadAllObj (if_load_parent) {
       if (!if_load_parent) {
@@ -1755,6 +1747,14 @@ export default {
     saveObj () {
     },
     // TODO other operations
+    filterHierarchyNode: function (value, data) {
+      if (!value) return true;
+      return data.text.indexOf(value) !== -1;
+    },
+    filterAnnotatingHierarchyNode: function (value, data) {
+      if (!value) return true;
+      return data.text.indexOf(value) !== -1;
+    },
     expandAllAnnotatingNodes () {
       for (let node of this.$refs.treeAnnotatingRef.store._getAllNodes()) {
         node.expanded = true;
@@ -1802,7 +1802,15 @@ export default {
       }
     },
     filterAnnotatingHierarchyText (value) { // same name with a data() variable
-      this.$refs.treeRef.filter(value);
+      this.$refs.treeAnnotatingRef.filter(value);
+      if (!value && this.currentLevel <= 1) {
+        for (let node of this.$refs.treeAnnotatingRef.store._getAllNodes()) {
+          node.expanded = false;
+        }
+      }
+      // for (let node of this.$refs.treeAnnotatingRef.store._getAllNodes()) {
+      //   node.expanded = false;
+      // }
     },
     '$route' (to, from) { // Test
       // this.getParams();
