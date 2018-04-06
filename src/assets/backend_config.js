@@ -1,7 +1,7 @@
 const host = 'http://localhost';
 const port = 3000;
 const url = host + ':' + port;
-const serverUrlTest = 'http://daerduo.stanford.edu:8080';
+const serverUrlTest = 'http://daerduo.stanford.edu:8010';
 
 module.exports = {
   // host
