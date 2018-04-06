@@ -183,10 +183,10 @@
                 Type: {{visitingQueue[0]['questionType']}}<br>
                 Please choose the corresponding parts in the renderer.<br>
                 You can cut the part by clicking [1] and submit it by clicking [2].<br>
-                <el-button type="primary" round :disabled="this.allow_part_cutting"
+                <el-button type="primary" round :disabled="allow_part_cutting"
                            :loading="requestingRemesh" @click="requestRemesh" style="margin-top: 5px; margin-bottom: 5px">[1] Segment Selected Part(s)
                 </el-button><br>
-                <el-button type="success" round :disabled="!this.allow_part_cutting"
+                <el-button type="success" round :disabled="!allow_part_cutting"
                            :loading="requestingRemesh" @click="submitPartCuttingResult" style="margin-top: 5px; margin-bottom: 5px">[2] Submit Parts Cutting
                 </el-button><br>
               </template>
@@ -242,20 +242,21 @@ export default {
       });
     } else {
       const instruction =
-        'Instruction: \n' +
-        '  Please follow the right side (Q&A) panel to annotate the model. You can rate the node and add "other" node if the hierarchy cannot precisely describe the model.\n' +
-        'Important Keys:\n' +
-        '  Normal Mode:\n' +
-        '    [S]: select a part\n' +
-        '  Cutting Mode:\n' +
-        '    [S]: select a point to construct a boundary\n' +
-        '    [C]: cut the part along the boundary\n' +
-        '    [B]: submit the cutting result (or the button)\n' +
-        '    [.]:';
+        'Instruction: <br>' +
+        '&nbsp;&nbsp;Please follow the right side (Q&A) panel to annotate the model. You can rate the node and add "other" node if the hierarchy cannot precisely describe the model.<br>' +
+        'Important Keys:<br>' +
+        '--Normal Mode:<br>' +
+        '----[S]: select a part<br>' +
+        '--Cutting Mode:<br>' +
+        '----[S]: select a point to construct a boundary<br>' +
+        '----[C]: cut the part along the boundary<br>' +
+        '----[B]: submit the cutting result (or the button)<br>' +
+        '----[.]:<br>';
       console.log('instruction - ', instruction);
-      // this.$confirm(instruction, 'Instruction', {
-      //   confirmButtonText: 'confirm'
-      // });
+      this.$alert(instruction, 'Instruction', {
+        confirmButtonText: 'confirm',
+        dangerouslyUseHTMLString: true
+      });
     }
   },
   mounted: function () {
@@ -306,8 +307,11 @@ export default {
       hierarchySteps: [],
       currentLevel: 0,
       // TODO Data: Q & A - AND / OR / LEAF
-      requestingRemesh: false
-      // TODO Data: THREE - don't write here
+      requestingRemesh: false,
+      // TODO Data: THREE (don't write renderer-related variables here)
+      allow_part_cutting: false,
+      allow_select_part_cut: false,
+      allow_select_boundary: false
     };
   },
   methods: {
@@ -475,10 +479,7 @@ export default {
       this.part_colors = null;
       this.faceid_2_current_part_seg_id = null;
 
-      this.allow_part_cutting = false;
-      this.allow_select_part_cut = false;
-      this.allow_select_boundary = false;
-      this.switch_submit_part_cutting = 0;
+      // this.switch_submit_part_cutting = 0;
 
       this.switch_load_part_hier_template = false;
 
@@ -1619,7 +1620,7 @@ export default {
         this.scene.remove(this.current_remesh_obj);
         this.current_remesh_obj = null;
         this.allow_part_cutting = false;
-        this.allow_part_click = false;
+        this.allow_part_click = true;
         this.scene.children.forEach(child => {
           if (child.type === 'Mesh' && child.part_type !== 'remesh') {
             child.visible = true;
