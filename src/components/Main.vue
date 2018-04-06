@@ -51,12 +51,18 @@
           <span class="custom-tree-node" slot-scope="{node, data}">
             <span>{{ node.label }}</span>
             <span>
+              <!--<el-button-->
+                <!--type="text" size="mini"-->
+                <!--@click="() => {-->
+                <!--toLog(node);-->
+                <!--}"-->
+              <!--&gt;Log</el-button>-->
               <el-button
                 type="text" size="mini"
                 @click="() => {
-                toLog(node);
+                deleteNode(node);
                 }"
-              >+</el-button>
+              >Del</el-button>
               <el-popover placement="top" trigger="hover">
                 [ Information ] <br>
                 {{ node.label }}:&nbsp;
@@ -819,8 +825,8 @@ export default {
         type: 'success'
       });
       this.allow_part_click = false;
-      // if: "other"
-      if (chosePart['text'] === 'other_AND') { // TODO other
+      // TODO if: "other"
+      if (chosePart['text'] === 'other_AND') {
         this.$prompt('Please type the name of "other type" you chose:', 'Name of other type', {
           confirmButtonText: 'Confirm',
           cancelButtonText: 'Cancel',
@@ -842,7 +848,7 @@ export default {
             {
               key: chosePart['key'] + '-A',
               depth: chosePart['depth'] + 1,
-              questionType: 'AND', // TODO AND-AND
+              questionType: 'AND', // AND-AND
               text: 'other_AND',
               wn30synsetkey: 'not_apply_other',
               gloss: 'user added other AND node',
@@ -892,7 +898,6 @@ export default {
           type: 'warning'
         });
       } else if (parentPart['questionType'] === 'AND') {
-        // TODO if: "other"
         // visiting queue & stack
         parentPart = this.visitingQueue.shift();
         this.backStack.push(parentPart);
@@ -903,10 +908,11 @@ export default {
         for (let node of parentPart['nodes']) {
           for (let i = 0; i < node['vModelNumber']; ++i) {
             let newNode;
-            if (!node['text'].startsWith('other_')) { // TODO
+            if (!node['text'].startsWith('other_')) {
               newNode = JSON.parse(JSON.stringify(node));
               newNode['key'] += '-' + String(i + 1);
               newNode['text'] += ' - ' + String(i + 1);
+              // TODO if: other
             } else if (node['questionType'] === 'LEAF') {
               newNode = {
                 key: node['key'] + '-' + String(i + 1),
@@ -919,8 +925,7 @@ export default {
                 disabled: true
               }
             } else {
-              console.log('adding new AND node!!');
-              newNode = { // TODO
+              newNode = {
                 key: node['key'] + '-' + String(i + 1),
                 depth: node['depth'],
                 questionType: 'AND',
@@ -942,9 +947,9 @@ export default {
                     disabled: true
                   },
                   {
-                    key: node['key'] + ' - ' + String(i + 1) + '-A', // TODO
+                    key: node['key'] + ' - ' + String(i + 1) + '-A',
                     depth: node['depth'] + 1,
-                    questionType: 'AND', // TODO AND-AND
+                    questionType: 'AND', // AND-AND
                     text: 'other_AND',
                     wn30synsetkey: 'not_apply_other',
                     gloss: 'user added other AND node',
@@ -1029,6 +1034,22 @@ export default {
       })
     },
     getDescription () { // TODO get description figures from the server
+    },
+    // TODO editing hierarchy
+    deleteNode (node) { // TODO
+      if (node['vModelNumber'] === 0) {
+        this.$confirm('Do you want to delete this node?', 'Confirm: Delete', {
+          cancelButtonText: 'Cancel',
+          confirmButtonText: 'Confirm'
+        }).then(() => {
+          // TODO
+        });
+      } else {
+        this.$message({
+          message: 'Cannot delete the node.',
+          type: 'warning'
+        });
+      }
     },
     // TODO segmentation: operating & processing
     resetPartColor () {
