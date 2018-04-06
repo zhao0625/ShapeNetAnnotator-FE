@@ -114,9 +114,15 @@
             </el-card>
             <!-- TODO Q&A Area -->
             <el-card class="box-card">
+              <!-- TODO rating -->
+              <template v-if="visitingQueue.length !== 0">
+                Please rate the current node and choose next node(s) below.
+                <el-rate v-model="visitingQueue[0]['vModelRate']"
+                         :colors="['#99A9BF', '#F7BA2A', '#FF9900']"
+                ></el-rate>
+              </template>
+              <!-- TODO finish (removing this template will cause error (undefined) in following v-for) -->
               <template v-if="visitingQueue.length === 0">
-                <!-- TODO  -->
-                <!-- removing this template will cause error (undefined) in following v-for -->
                 You finished the annotation! Please submit or review the annotation.<br>
                 <el-button type="success" round style="margin-top: 10px"
                            @click="() => {submitFinalResult();}"
@@ -169,15 +175,14 @@
               <template v-else-if="visitingQueue[0]['questionType'] === 'LEAF'">
                 Name: {{visitingQueue[0]['text']}}<br>
                 Type: {{visitingQueue[0]['questionType']}}<br>
-                <el-button type="primary" round :disabled="this.allow_part_cutting"
-                           :loading="requestingRemesh" @click="requestRemesh" style="margin-top: 5px; margin-bottom: 5px">Segment Selected Part(s)
-                </el-button><br>
-                <el-button type="success" round
-                           :loading="requestingRemesh" @click="submitPartCuttingResult" style="margin-top: 5px; margin-bottom: 5px">Submit Parts Cutting
-                </el-button><br>
                 Please choose the corresponding parts in the renderer.<br>
-                [ Instructions ]:<br>
-                ...
+                You can cut the part by clicking [1] and submit it by clicking [2].<br>
+                <el-button type="primary" round :disabled="this.allow_part_cutting"
+                           :loading="requestingRemesh" @click="requestRemesh" style="margin-top: 5px; margin-bottom: 5px">[1] Segment Selected Part(s)
+                </el-button><br>
+                <el-button type="success" round :disabled="!this.allow_part_cutting"
+                           :loading="requestingRemesh" @click="submitPartCuttingResult" style="margin-top: 5px; margin-bottom: 5px">[2] Submit Parts Cutting
+                </el-button><br>
               </template>
               <template v-else>
                 Error: no type!
@@ -230,7 +235,17 @@ export default {
         params: {}
       });
     } else {
-      const instruction = '';
+      const instruction =
+        'Instruction: \n' +
+        '  Please follow the right side (Q&A) panel to annotate the model. You can rate the node and add "other" node if the hierarchy cannot precisely describe the model.\n' +
+        'Important Keys:\n' +
+        '  Normal Mode:\n' +
+        '    [S]: select a part\n' +
+        '  Cutting Mode:\n' +
+        '    [S]: select a point to construct a boundary\n' +
+        '    [C]: cut the part along the boundary\n' +
+        '    [B]: submit the cutting result (or the button)\n' +
+        '    [.]:';
       console.log('instruction - ', instruction);
       // this.$confirm(instruction, 'Instruction', {
       //   confirmButtonText: 'confirm'
@@ -513,23 +528,48 @@ export default {
       let queue = [this.hierarchyTreeRoot];
       while (queue.length !== 0) {
         let part = queue.shift();
-        part['key'] = String(key++); // TODO compute key (wn30synsetkey may be 'undefined') and convert to string
+        part['key'] = String(key++); // compute key (wn30synsetkey may be 'undefined')
         part['disabled'] = true;
-        // init v-model: root (depth = 0) is OR
+        this.$set(part, 'vModelRate', 5); // TODO rate (default: 5 stars)
+        // init v-model (root (depth = 0) = OR) & "other" nodes
         if (part['depth'] % 2 === 0) { // OR
           part['questionType'] = 'OR';
-          this.$set(part, 'vModelNumber', 0); // [!] Vue.js cannot detect directly adding a key
-          this.$set(part, 'vModelChoseNodeKey', '0');
+          // [!] Vue.js cannot detect directly adding a key -> need this.$set()
+          this.$set(part, 'vModelNumber', 0); // AND: number of current parts
+          this.$set(part, 'vModelChoseNodeKey', '0'); // OR: type of next node
+          // "other" sub-type
+          if (part['nodes'] !== undefined) {
+            part['nodes'].push({
+              key: String(key++),
+              questionType: 'AND',
+              text: 'other_AND',
+              wn30synsetkey: 'not_apply_other',
+              gloss: 'user added other sub-type'
+            });
+          }
         } else { // AND
           part['questionType'] = 'AND';
+          // "other" sub-part OR
+          if (part['nodes'] !== undefined) {
+            part['nodes'].push({
+              key: String(key++),
+              questionType: 'OR',
+              text: 'other_OR',
+              wn30synsetkey: 'not_apply_other',
+              gloss: 'user added other sub-part',
+              vModelNumber: 0,
+              vModelChoseNodeKey: '0'
+            });
+          }
         }
+        // depth & LEAF node
         if (part['nodes'] !== undefined) {
-          part['nodes'].forEach(function (child) {
+          part['nodes'].forEach(child => {
             child['depth'] = part['depth'] + 1;
             queue.push(child);
             maxDepth = Math.max(child['depth'], maxDepth);
           })
-        } else {
+        } else if (part['wn30synsetkey'] !== 'not_apply_other') {
           part['questionType'] = 'LEAF';
           minDepth = Math.min(part['depth'], minDepth);
         }
@@ -616,7 +656,7 @@ export default {
           });
       }
     },
-    loadObj (part_type, part_id) { // TODO may consume too much memory ?
+    loadObj (part_type, part_id) {
       let file_path = conf.SERVER_URL_TESTING;
       // let file_path = conf.remoteHost + ':' + conf.remotePort;
       if (part_type === 'original') {
@@ -779,6 +819,40 @@ export default {
         type: 'success'
       });
       this.allow_part_click = false;
+      // if: "other"
+      if (chosePart['text'] === 'other_AND') { // TODO other
+        this.$prompt('Please type the name of "other type" you chose:', 'Name of other type', {
+          confirmButtonText: 'Confirm',
+          cancelButtonText: 'Cancel',
+          inputPattern: /^[a-zA-Z][a-zA-Z0-9_]{2,30}$/,
+          inputErrorMessage: 'The length of name should be greater than 2 and less than 30. It can only contain letters and "_".'
+        }).then(({value}) => {
+          chosePart['text'] = value;
+          this.$set(chosePart, 'nodes', [
+            {
+              key: chosePart['key'] + '-L',
+              depth: chosePart['depth'] + 1,
+              questionType: 'LEAF',
+              text: 'other_leaf',
+              wn30synsetkey: 'not_apply_other',
+              gloss: 'user added other leaf node',
+              vModelNumber: 0,
+              disabled: true
+            },
+            {
+              key: chosePart['key'] + '-A',
+              depth: chosePart['depth'] + 1,
+              questionType: 'AND', // TODO AND-AND
+              text: 'other_AND',
+              wn30synsetkey: 'not_apply_other',
+              gloss: 'user added other AND node',
+              vModelNumber: 0,
+              // vModelChoseNodeKey: '0',
+              disabled: true
+            }
+          ]);
+        });
+      }
       // visiting queue & stack
       let parentPart = this.visitingQueue.shift();
       this.backStack.push(parentPart);
@@ -792,6 +866,7 @@ export default {
       let checkedAnnotatingTreeKeys = this.$refs.treeAnnotatingRef.getCheckedKeys();
       checkedAnnotatingTreeKeys.push(chosePart['key']);
       this.$refs.treeAnnotatingRef.setCheckedKeys(checkedAnnotatingTreeKeys);
+      this.expandAllAnnotatingNodes();
       // progress step
       this.updateStepStatus();
     },
@@ -817,6 +892,7 @@ export default {
           type: 'warning'
         });
       } else if (parentPart['questionType'] === 'AND') {
+        // TODO if: "other"
         // visiting queue & stack
         parentPart = this.visitingQueue.shift();
         this.backStack.push(parentPart);
@@ -826,9 +902,60 @@ export default {
         let checkedAnnotatingTreeKeys = this.$refs.treeAnnotatingRef.getCheckedKeys();
         for (let node of parentPart['nodes']) {
           for (let i = 0; i < node['vModelNumber']; ++i) {
-            let newNode = JSON.parse(JSON.stringify(node));
-            newNode['key'] += '-' + String(i + 1);
-            newNode['text'] += ' - ' + String(i + 1);
+            let newNode;
+            if (!node['text'].startsWith('other_')) { // TODO
+              newNode = JSON.parse(JSON.stringify(node));
+              newNode['key'] += '-' + String(i + 1);
+              newNode['text'] += ' - ' + String(i + 1);
+            } else if (node['questionType'] === 'LEAF') {
+              newNode = {
+                key: node['key'] + '-' + String(i + 1),
+                depth: node['depth'],
+                questionType: 'LEAF',
+                text: node['text'] + ' - ' + String(i + 1),
+                wn30synsetkey: 'not_apply_other',
+                vModelNumber: 0,
+                vModelRate: 5,
+                disabled: true
+              }
+            } else {
+              console.log('adding new AND node!!');
+              newNode = { // TODO
+                key: node['key'] + '-' + String(i + 1),
+                depth: node['depth'],
+                questionType: 'AND',
+                text: node['text'] + ' - ' + String(i + 1),
+                wn30synsetkey: 'not_apply_other',
+                vModelNumber: 0,
+                vModelRate: 5,
+                disabled: true,
+                nodes: [
+                  {
+                    key: node['key'] + '-' + String(i + 1) + '-L',
+                    depth: node['depth'] + 1,
+                    questionType: 'LEAF',
+                    text: 'other_leaf',
+                    wn30synsetkey: 'not_apply_other',
+                    gloss: 'user added other leaf node',
+                    vModelNumber: 0,
+                    vModelRate: 5,
+                    disabled: true
+                  },
+                  {
+                    key: node['key'] + ' - ' + String(i + 1) + '-A', // TODO
+                    depth: node['depth'] + 1,
+                    questionType: 'AND', // TODO AND-AND
+                    text: 'other_AND',
+                    wn30synsetkey: 'not_apply_other',
+                    gloss: 'user added other AND node',
+                    vModelNumber: 0,
+                    // vModelChoseNodeKey: '0',
+                    vModelRate: 5,
+                    disabled: true
+                  }
+                ]
+              };
+            }
             choseNodes.push(newNode);
             // check
             if (i === 0) { checkedKeys.push(node['key']); }
@@ -846,15 +973,16 @@ export default {
         parentPart['nodes'] = choseNodes;
         this.$refs.treeRef.setCheckedKeys(checkedKeys); // check
         this.$refs.treeAnnotatingRef.setCheckedKeys(checkedAnnotatingTreeKeys); // TODO not working !!!
+        this.expandAllAnnotatingNodes();
         // visiting queue & progress step
         this.visitingQueue = this.visitingQueue.concat(choseNodes); // push all parts of AND node to the queue
         this.updateStepStatus();
       } else if (parentPart['questionType'] === 'LEAF') {
-        // visiting queue & stack
-        parentPart = this.visitingQueue.shift();
-        this.backStack.push(parentPart);
-        // TODO annotating
+        // annotating
         if (this.annotatePart(parentPart)) {
+          // visiting queue & stack
+          parentPart = this.visitingQueue.shift();
+          this.backStack.push(parentPart);
           this.allow_part_click = false; // after finish
         }
         // visiting queue
@@ -879,8 +1007,26 @@ export default {
         this.allow_part_click = true;
       }
     },
-    lastStep () { // TODO but AND nodes will choose more than one nodes
-      this.visitingQueue.unshift(this.backStack.pop());
+    lastStep () { // TODO
+      this.$confirm('(still in developing!) Do you want to go to the last step? You current step cannot be recovered.', 'Last Step', {
+        type: 'warning',
+        confirmButtonText: 'Confirm',
+        cancelButtonText: 'Cancel'
+      }).then(() => {
+        // // this.visitingQueue.unshift(this.backStack.pop());
+        // let lastNode = this.backStack.pop();
+        // if (lastNode['questionType'] === 'AND') {
+        //   // TODO
+        // } else if (lastNode['questionType'] === 'OR') {
+        //   // TODO
+        // } else if (lastNode['questionType'] === 'LEAF') {
+        //   // TODO
+        // }
+        this.$message({
+          type: 'info',
+          message: '(still in developing!) Go to the last step'
+        });
+      })
     },
     getDescription () { // TODO get description figures from the server
     },
@@ -1587,6 +1733,11 @@ export default {
     saveObj () {
     },
     // TODO other operations
+    expandAllAnnotatingNodes () {
+      for (let node of this.$refs.treeAnnotatingRef.store._getAllNodes()) {
+        node.expanded = true;
+      }
+    },
     switchShowAllNodes () {
       if (this.switchShowAll) {
         this.switchShowAll = !this.switchShowAll;
