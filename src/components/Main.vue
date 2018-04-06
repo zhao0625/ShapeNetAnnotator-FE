@@ -877,7 +877,7 @@ export default {
       // progress step
       this.updateStepStatus();
     },
-    nextStep () { // TODO
+    nextStep () {
       let parentPart = this.visitingQueue[0];
       console.log('[ next step ] visiting part: ', parentPart);
       this.$message({
@@ -1551,11 +1551,11 @@ export default {
               message: 'Requested remeshing from the server.',
               type: 'success'
             });
+            this.requestingRemesh = false;
           }).catch(error => {
             this.handleAnnotatorError(error);
           });
       }
-      this.requestingRemesh = false;
     },
     undoRemesh () {
       // TODO
@@ -1654,7 +1654,7 @@ export default {
 
           this.$message({
             type: 'success',
-            message: 'You new parts are available now!'
+            message: 'Your new parts are available now!'
           });
         }).catch(error => this.handleAnnotatorError(error));
     },
