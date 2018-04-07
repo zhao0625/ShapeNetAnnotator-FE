@@ -57,17 +57,17 @@
                 <!--toLog(node);-->
                 <!--}"-->
               <!--&gt;Log</el-button>-->
+              <el-button :type="node.data['key'] === visitingQueue[0]['key'] ? 'warning' : 'text'" icon="el-icon-edit" size="mini"
+                         @click="goToNode(node)"></el-button>
               <el-button
                 type="text" size="mini"
-                @click="() => {
-                deleteNode(node);
-                }"
-              >Del</el-button>
+                @click="() => {deleteNode(node);}">Del</el-button>
               <el-popover placement="top" trigger="hover">
                 [ Information ] <br>
                 {{ node.label }}:&nbsp;
                 {{ node.data['gloss'] !== 'undefined' ? node.data['gloss'] : 'No description.'}}
-                <el-button slot="reference" icon="edit" type="text" class="edit-btn">info</el-button>
+                <el-button slot="reference" size="mini"
+                           icon="edit" type="text" class="edit-btn">info</el-button>
               </el-popover>
             </span>
           </span>
@@ -123,6 +123,7 @@
               <!-- TODO rating -->
               <template v-if="visitingQueue.length !== 0">
                 Please rate the current node and choose next node(s) below.
+                <!--<el-rate v-model="(clickNode === null ? visitingQueue[0] : clickNode)['vModelRate']"-->
                 <el-rate v-model="visitingQueue[0]['vModelRate']"
                          :colors="['#99A9BF', '#F7BA2A', '#FF9900']"
                 ></el-rate>
@@ -299,6 +300,7 @@ export default {
       filterHierarchyText: '', // same name with a 'watch' method
       filterAnnotatingHierarchyText: '', // for annotating hierarchy
       switchShowAll: true,
+      clickNode: null, // TODO clicked node
       // TODO Data: User Annotated Hierarchy Tree
       hierarchyTreeAnnotatingRoot: {},
       // TODO Data: Progress Steps
@@ -811,6 +813,10 @@ export default {
       }
     },
     // TODO Q&A
+    goToNode (choseNode) { // TODO
+      console.log('[ go to node: ]', choseNode);
+      // remove
+    },
     nextOrStep (chosePart) {
       console.log('[ next OR step ] chose part: ', chosePart);
       this.$message({
@@ -866,7 +872,7 @@ export default {
       checkedAnnotatingTreeKeys.push(chosePart['key']);
       this.$refs.treeAnnotatingRef.setCheckedKeys(checkedAnnotatingTreeKeys);
       this.expandAllAnnotatingNodes();
-      // progress step
+      // progress step & hierarchy
       this.updateStepStatus();
     },
     nextStep () {
@@ -972,7 +978,7 @@ export default {
         this.$refs.treeRef.setCheckedKeys(checkedKeys); // check
         this.$refs.treeAnnotatingRef.setCheckedKeys(checkedAnnotatingTreeKeys); // TODO not working !!!
         this.expandAllAnnotatingNodes();
-        // visiting queue & progress step
+        // visiting queue & progress step & hierarchy
         this.visitingQueue = this.visitingQueue.concat(choseNodes); // push all parts of AND node to the queue
         this.updateStepStatus();
       } else if (parentPart['questionType'] === 'LEAF') {
@@ -983,11 +989,12 @@ export default {
           this.backStack.push(parentPart);
           this.allow_part_click = false; // after finish
         }
-        // visiting queue
+        // visiting queue & hierarchy
         this.updateStepStatus();
       }
     },
     updateStepStatus () {
+      // current level
       const nextPart = this.visitingQueue[0];
       this.currentLevel = nextPart['depth']; // BFS / currentLevel is monotonically increasing
       const content = {
@@ -1000,12 +1007,14 @@ export default {
       } else {
         this.hierarchySteps.push(content);
       }
+      // hierarchy tree
+      this.collapseDetailedNodes();
       // annotation
       if (nextPart['questionType'] === 'LEAF') {
         this.allow_part_click = true;
       }
     },
-    lastStep () { // TODO
+    lastStep () { // TODO (consider "annotated")
       this.$confirm('(still in developing!) Do you want to go to the last step? You current step cannot be recovered.', 'Last Step', {
         type: 'warning',
         confirmButtonText: 'Confirm',
@@ -1760,6 +1769,13 @@ export default {
         node.expanded = true;
       }
     },
+    collapseDetailedNodes () {
+      for (let node of this.$refs.treeAnnotatingRef.store._getAllNodes()) {
+        if (node.data['depth'] > this.currentLevel) {
+          node.expanded = false;
+        }
+      }
+    },
     switchShowAllNodes () {
       if (this.switchShowAll) {
         this.switchShowAll = !this.switchShowAll;
@@ -1803,14 +1819,7 @@ export default {
     },
     filterAnnotatingHierarchyText (value) { // same name with a data() variable
       this.$refs.treeAnnotatingRef.filter(value);
-      if (!value && this.currentLevel <= 1) {
-        for (let node of this.$refs.treeAnnotatingRef.store._getAllNodes()) {
-          node.expanded = false;
-        }
-      }
-      // for (let node of this.$refs.treeAnnotatingRef.store._getAllNodes()) {
-      //   node.expanded = false;
-      // }
+      this.collapseDetailedNodes();
     },
     '$route' (to, from) { // Test
       // this.getParams();
